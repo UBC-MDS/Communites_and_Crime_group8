@@ -1,0 +1,35 @@
+# Teamwork contract
+
+## Members: 
+- Sarah Abdelazim
+- Daniel Merigo
+- Luke Yang 
+- Chenyang Wang
+
+## Expectations
+Group members will submit their pull request with all completed sections by Friday of that week at 11:59 pm. Work done for the milestones should be tested and run without issue before pull requests are submitted. Written sections should also have proper spelling and grammar.
+
+If group members are stuck or unable to finish their assigned work, please contact the others and ask for help at least 24 hrs before the Friday deadline (Thursday 11:59 pm) so that others can help or redistribute work as needed. 
+
+Meetings
+Formal, in-person meetings:
+Tuesdays 2-4 pm: Group work in lab time
+Tuesdays at 4 pm: delegation of tasks
+Additional meetings (in person or online) can be scheduled as needed.
+
+Communication
+Communication will mainly be through Slack and Github Issues. Slack will mainly be used for discussing logistics such as scheduling meetings, task delegation, and recording meeting notes. Github issues will be used to discuss ideas, project issues, and suggestions, as well as reviewing work.
+
+Roles
+This role will be assigned to a different member each week:
+Proof-reader: Go through each pull request and make sure it satisfies all the requirements for the milestone, create the tags and release version by Saturday at 6pm.
+Other team member roles will be delegated during the Monday meeting. 
+
+Reviews
+When pull requests are created, members are expected to add all teammates as reviewers. All pull requests should be reviewed by at least 2 members, though official approval only needs to be given by one (the proof-reader). Pull requests should be unofficially reviewed before Saturday at 6pm.
+
+Breach of Contract
+If the terms of the contract are violated, we will use a three stage warning system:
+Slack warning outlining the violation and a reminder of the terms of the contract.
+In-person meeting to discuss the issues/violations and attempt to find a solution.
+Reaching out to TAs/staff to discuss the issues.
