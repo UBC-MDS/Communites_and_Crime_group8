@@ -20,4 +20,4 @@ In the left-hand filter menu the user will have the liberty of choosing: State, 
 
 ## License
 
-Please refer to our license file [here]('https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/LICENSE')
+Please refer to our license file [here](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/LICENSE)
