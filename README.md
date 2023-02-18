@@ -16,8 +16,8 @@ In the left-hand filter menu the user will have the liberty of choosing: State, 
 
 ## Sketch
 
-![tab_1]('img/Tab1.png') ![tab_1]('img/Tab2.png')
+![tab_1](img/Tab1.png) ![tab_1](img/Tab2.png)
 
 ## License
 
-Please refer to our license file [license] ('https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/LICENSE')
+Please refer to our license file [here]('https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/LICENSE')
