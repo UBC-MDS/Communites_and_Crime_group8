@@ -17,7 +17,11 @@ library(thematic)
 library(forcats)
 
 data <- read.csv("data/processed_communities.csv") |>
-  select(c('state_name','community','latitude','longitude','violent_crime_rate','type','population'))
+  select(c('area','type', 'state','latitude','longitude','violent_crime_rate','population', 
+           'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 'racePctHisp', 
+           'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 'PctUnemployed', 
+           'LemasSwornFT', 'LemasSwFTFieldOps', 'LemasPctPolicOnPatr', 'LemasTotalReq', 
+           'PolicCars', 'PolicOperBudg', 'NumKindsDrugsSeiz'))
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
@@ -27,7 +31,7 @@ ui <- navbarPage('Crime Rate Finder App',
                  tabPanel('Data Exploration',
                           sidebarLayout(column(3,selectInput(inputId = 'state',
                                                label = 'Select State:',
-                                               choices = unique(data$state_name),
+                                               choices = unique(data$state),
                                                selected = 'California'),
                                    selectInput(inputId = 'type',
                                                label = 'Select Community Type:',
@@ -41,7 +45,7 @@ ui <- navbarPage('Crime Rate Finder App',
                             sidebarPanel(
                               selectInput(inputId = 'state_plot',
                                           label = 'Select State:',
-                                          choices = unique(data$state_name),
+                                          choices = unique(data$state),
                                           selected = 'California')
                             ),
                             mainPanel(
@@ -65,7 +69,7 @@ server <- function(input, output, session) {
   filtered_data <-reactive({
 
     data |>
-      dplyr::filter(state_name == input$state) |>
+      dplyr::filter(state == input$state) |>
       dplyr::filter(type == input$type)
 
   })
@@ -73,7 +77,7 @@ server <- function(input, output, session) {
   filtered_data_plot <-reactive({
     
     data |>
-      dplyr::filter(state_name == input$state_plot)
+      dplyr::filter(state == input$state_plot)
     
   })
   
@@ -100,7 +104,7 @@ server <- function(input, output, session) {
     
     # read the documentation for the arguments  
     datatable(filtered_data_plot()|>
-                select(c('community','type','population','violent_crime_rate')),
+                select(c('area','type','population','violent_crime_rate')),
               caption = 'Table: Observations by location.',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
@@ -129,9 +133,9 @@ server <- function(input, output, session) {
         lat = ~latitude,
         lng = ~longitude,
         radius = ~violent_crime_rate*20,
-        popup = paste(filtered_data()$community,
+        popup = paste(filtered_data()$area,
                       "in",
-                      filtered_data()$state_name,
+                      filtered_data()$state,
                       'has crime rate of',
                       filtered_data()$violent_crime_rate),
         color = ~pal(violent_crime_rate),
