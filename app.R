@@ -6,7 +6,6 @@
 #
 #    http://shiny.rstudio.com/
 #
-
 library(shiny)
 library(bslib)
 library(leaflet)
@@ -15,29 +14,26 @@ library(ggplot2)
 library(plotly)
 library(thematic)
 library(forcats)
-
 data <- read.csv("data/processed_communities.csv") |>
   select(c('area','type', 'state','latitude','longitude','violent_crime_rate','population', 
            'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 'racePctHisp', 
            'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 'PctUnemployed', 
            'LemasSwornFT', 'LemasSwFTFieldOps', 'LemasPctPolicOnPatr', 'LemasTotalReq', 
            'PolicCars', 'PolicOperBudg', 'NumKindsDrugsSeiz'))
-
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
-
 ui <- navbarPage('Crime Rate Finder App',
                  theme = bs_theme(bootswatch = 'lux'),
                  tabPanel('Data Exploration',
+                          tags$style(type = "text/css", "#map {height: calc(90vh - 80px) !important;}"),
                           sidebarLayout(column(3,selectInput(inputId = 'state',
-                                               label = 'Select State:',
-                                               choices = unique(data$state),
-                                               selected = 'California'),
-                                   selectInput(inputId = 'type',
-                                               label = 'Select Community Type:',
-                                               choices = unique(data$type),
-                                               selected = 'city')),
-                          column(9, leaflet::leafletOutput(outputId = 'map')))
+                                                             label = 'Select State:',
+                                                             choices = c('All',sort(unique(data$state))),
+                                                             selected = 'All'),
+                                               selectInput(inputId = 'city',
+                                                           label = 'Select Community Type:',
+                                                           choices = c())),
+                                        column(9, leaflet::leafletOutput(outputId = 'map')))
                           
                  ),
                  tabPanel('Correlation',
@@ -60,19 +56,41 @@ ui <- navbarPage('Crime Rate Finder App',
                           ))
                  
 )
-
 server <- function(input, output, session) {
   
   ## LINEPLOT
   
-  
-  filtered_data <-reactive({
-
-    data |>
-      dplyr::filter(state == input$state) |>
-      dplyr::filter(type == input$type)
-
+  observeEvent(input$state, {
+    if (input$state == 'All'){
+      citiesToShow = data %>% dplyr::pull(area)
+    }else{
+      #Filter countries based on current continent selection
+      citiesToShow = data %>% 
+        dplyr::filter(state %in% input$state) %>% dplyr::pull(area)
+    }
+    
+    print(input$state)
+    print(citiesToShow)
+    #Update the actual input
+    updateSelectInput(session, "city", choices = c('All',sort(citiesToShow)), 
+                      selected = 'All')
+    
   })
+  filtered_data <-reactive({
+    print(input$state)
+    if (input$state == 'All'){
+      data
+    }else {
+      if (input$city == 'All'){
+        data |>
+          dplyr::filter(state == input$state)
+      }else{
+        data |>
+          dplyr::filter(state == input$state) |>
+          dplyr::filter(area == input$city)}
+    }
+  })
+  
   
   filtered_data_plot <-reactive({
     
@@ -128,19 +146,15 @@ server <- function(input, output, session) {
     
     filtered_data() |> 
       leaflet::leaflet() |> 
-      leaflet::addProviderTiles(providers$CartoDB.Positron) |> 
-      leaflet::addCircleMarkers(
-        lat = ~latitude,
-        lng = ~longitude,
-        radius = ~violent_crime_rate*20,
+      leaflet::addProviderTiles(providers$CartoDB.Positron) %>% addTiles() %>% addMarkers(
+        
         popup = paste(filtered_data()$area,
                       "in",
                       filtered_data()$state,
                       'has crime rate of',
                       filtered_data()$violent_crime_rate),
-        color = ~pal(violent_crime_rate),
-        options = popupOptions(closeButton = FALSE))
+        clusterOptions = markerClusterOptions()
+      )
   })
 }
-
 shinyApp(ui, server)
