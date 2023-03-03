@@ -14,16 +14,21 @@ library(ggplot2)
 library(plotly)
 library(thematic)
 library(forcats)
+library(ggcorrplot)
+
 data <- read.csv("data/processed_communities.csv") |>
   select(c('area','type', 'state','latitude','longitude','violent_crime_rate','population', 
            'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 'racePctHisp', 
-           'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 'PctUnemployed', 
-           'LemasSwornFT', 'LemasSwFTFieldOps', 'LemasPctPolicOnPatr', 'LemasTotalReq', 
-           'PolicCars', 'PolicOperBudg', 'NumKindsDrugsSeiz'))
+           'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 'PctUnemployed'))
+
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
+
+my_theme <- bs_theme(bootswatch = "darkly",
+                     base_font = font_google("Righteous"))
+
 ui <- navbarPage('Crime Rate Finder App',
-                 theme = bs_theme(bootswatch = 'lux'),
+                 theme = my_theme,
                  tabPanel('Data Exploration',
                           tags$style(type = "text/css", "#map {height: calc(90vh - 80px) !important;}"),
                           sidebarLayout(column(3,selectInput(inputId = 'state',
@@ -31,7 +36,7 @@ ui <- navbarPage('Crime Rate Finder App',
                                                              choices = c('All',sort(unique(data$state))),
                                                              selected = 'All'),
                                                selectInput(inputId = 'city',
-                                                           label = 'Select Community Type:',
+                                                           label = 'Select Community:',
                                                            choices = c())),
                                         column(9, leaflet::leafletOutput(outputId = 'map')))
                           
@@ -39,14 +44,33 @@ ui <- navbarPage('Crime Rate Finder App',
                  tabPanel('Correlation',
                           sidebarLayout(
                             sidebarPanel(
-                              selectInput(inputId = 'state_plot',
+                              selectInput(inputId = 'corr_plot',
                                           label = 'Select State:',
                                           choices = unique(data$state),
-                                          selected = 'California')
+                                          selected = 'Alabama')
                             ),
                             mainPanel(
                               tabsetPanel(
-                                tabPanel('Population Correlation',
+                                tabPanel('Correlation by State',
+                                         plotlyOutput(outputId = 'corrplot')
+                                )
+                              )))),
+                 
+                 tabPanel('Scatter',
+                          sidebarLayout(
+                            sidebarPanel(
+                              selectInput(inputId = 'state_plot',
+                                          label = 'Select State:',
+                                          choices = unique(data$state),
+                                          selected = 'Alabama'),
+                              selectInput(inputId = 'var',
+                                          label = 'Select Variable:',
+                                          choices = c(colnames(data)[-(1:6)]),
+                                          selected = 'population')
+                            ),
+                            mainPanel(
+                              tabsetPanel(
+                                tabPanel('Scatterplot',
                                          plotlyOutput(outputId = 'lineplot')
                                 ),
                                 tabPanel('Communities in the State',
@@ -54,9 +78,34 @@ ui <- navbarPage('Crime Rate Finder App',
                               )
                             )
                           ))
-                 
+
 )
 server <- function(input, output, session) {
+  
+  thematic_shiny(font = "auto")
+  ggplot2::theme_set(ggplot2::theme_minimal())
+  
+  ##CORRELATION PLOT
+  output$corrplot <- plotly::renderPlotly({ 
+    filtered_data_corr <- data |> 
+      dplyr::filter(state == input$corr_plot) |> 
+      dplyr::select(-c('area','type', 'state','latitude','longitude')) |> 
+      tidyr::drop_na()
+    
+    corr <- round(cor(filtered_data_corr), 1)
+    
+    plotly::ggplotly(
+      ggcorrplot::ggcorrplot(corr, outline.col = "white",ggtheme = ggplot2::theme_gray, 
+                             p.mat = NULL, insig = c("pch", "blank"), pch = 1, 
+                             pch.col = "black", pch.cex =1,
+                             tl.cex = 14) +
+        ggplot2::theme(axis.text.x = element_text(margin=margin(-2,0,0,0), size = 8),
+                       axis.text.y = element_text(margin=margin(0,-2,0,0), size = 8),
+                       panel.grid.minor = element_line(size=10)) + 
+        ggplot2::geom_tile(height=0.8, width=0.8)
+      )
+    
+  })
   
   ## LINEPLOT
   
@@ -71,6 +120,7 @@ server <- function(input, output, session) {
     
     print(input$state)
     print(citiesToShow)
+    
     #Update the actual input
     updateSelectInput(session, "city", choices = c('All',sort(citiesToShow)), 
                       selected = 'All')
@@ -101,37 +151,41 @@ server <- function(input, output, session) {
   
   output$lineplot <- plotly::renderPlotly({ 
     
-    thematic::thematic_shiny()
-    
+    thematic_on(font = "Righteous")
+  
     plotly::ggplotly(
       filtered_data_plot() |>
-        ggplot2::ggplot(aes(x = population,
-                            y = violent_crime_rate,)) +
+        ggplot2::ggplot(aes(x = .data[[input$var]],
+                            y = violent_crime_rate)) +
         ggplot2::geom_point(alpha = 0.5) +
         geom_smooth(method = "lm") +
         ggplot2::scale_color_brewer(palette = "Set2") +
-        ggplot2::labs(title = paste('Population vs. Crime Rate in',input$state_plot),
-                      x = 'Population',
-                      y = 'Crime Rate') 
+        ggplot2::labs(title = paste(input$var, 'vs. Crime Rate in', input$state_plot),
+                      x = input$var,
+                      y = 'Crime Rate') +
+        ggplot2::theme(plot.title = element_text(hjust = 0.5))
     )
   })
   
   ## DT TABLE
-  
   output$table <-  renderDT({
     
-    # read the documentation for the arguments  
-    datatable(filtered_data_plot()|>
-                select(c('area','type','population','violent_crime_rate')),
-              caption = 'Table: Observations by location.',
+    brks <- quantile(data$testrun, probs = seq(.05, .95, .01), na.rm = TRUE) 
+    clrs <- round(seq(150, 40, length.out = length(brks) + 1), 0) %>%
+      {paste0("rgb(150,", ., ",", ., ")")}
+    
+    filtered_data_table <- filtered_data_plot()|>
+      select(c('area','type',input$var,'violent_crime_rate'))
+
+    datatable(filtered_data_table,
+              caption = 'Table: Observations by Community ',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
-                           scroller = TRUE))
-    
+                           scroller = TRUE))  %>%
+      formatStyle(colnames(filtered_data_table), backgroundColor = styleInterval(brks, clrs))
   })
-  
-  
+    
   ## LEAFLET MAP
   
   output$map <- leaflet::renderLeaflet({
@@ -157,4 +211,5 @@ server <- function(input, output, session) {
       )
   })
 }
+
 shinyApp(ui, server)
