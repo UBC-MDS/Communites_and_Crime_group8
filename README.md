@@ -1,12 +1,12 @@
 <!-- #region -->
-# Crime Rate Finder App
-Link to the dashboard: [Crime Rate Finder](https://missarah.shinyapps.io/Communites_and_Crime_group8/)
 
+# Crime Rate Finder App
+
+Link to the dashboard: [Crime Rate Finder](https://missarah.shinyapps.io/Communites_and_Crime_group8/)
 
 ## Motivation
 
 The crime rate in a community is an important factor that citizens consider when making decisions about whether to live or invest. A high crime rate in a city may impact personal safety, property values, and overall quality of life and is influenced by many factors. Understanding where, how and why crime happens is important for fighting and lowering crime rates, hence increasing safety in communities. Since 1930, the FBI has been collecting data on the types, amounts, and impact of crime in the United States through the Uniform Crime Reporting Program. So, our dashboard will aim to figure out the socioeconomic conditions, sociodemographic and community factors influencing crime rate in different US states as well as provide access to crime data in an understandable and intuitive manner.
-
 
 ## Description of the Dashboard
 
@@ -44,10 +44,5 @@ Interested in contributing? Check out the contributing guidelines. We would love
 ## License
 
 Please refer to our license file [here](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/LICENSE)
-    
 
 <!-- #endregion -->
-
-```python
-
-```
