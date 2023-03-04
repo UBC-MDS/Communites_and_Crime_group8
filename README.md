@@ -20,9 +20,17 @@ The top menu is used for overall navigation and will include a 'Main Dashboard',
 
 In the left-hand filter menu the user will have the liberty of choosing: State, county, time interval (within 1995), community type (based on income and racial composition), police presence (amount of police officers) and police budget allocated. It will also include cards stating "Percentage of Violent Crimes", 'Overall Country Crime Percentage' and 'Police Presence'
 
+## Usability of the New App
 
+The Crime Rate Finder App contain an interactive map as a landing page that will show the violent crimes committed in the Continental United States of America by State and County.
 
+The top menu is used for overall navigation and will include a 'Data Exploration', 'Correlation' and 'Scatter' options:
 
+-  'Data Exploration' enables users to select "State" and "Community" to look at the crime rate at each community on the map, and users can also directly swipe and zoom map to to refer the respective crime rate.
+
+-  'Correlation' aims to explore the correlation between communities with each state. When users select the state, a correlation heatmap is plot for this state respectively.
+
+-  'Scatter' aims to plot the relationship between crime rate and different variables (Population, PopDens, racepctblack, racePctWhite, racePctAsian, racePctHisp, agePct12t29, agePct65up, medIncome, NumStreet, PctUnemployed. On the second tab, 'Community in the State' is the table version of the "Scatter".
 
 ## Sketch
 
