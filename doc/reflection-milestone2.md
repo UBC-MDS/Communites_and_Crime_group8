@@ -14,4 +14,5 @@ The data is limited to the year 1994 with a datapoint per community (cities, vil
 
 
 - <b> Q - What are good future improvements and additions to our dashboard? </b>
-A possible addition is to add some of the other variables in our map. For example, coloring the state by population so a higher population would have a darker red background for the state whereas a lower population would have a light red color, etc... Another addition is to add an extra plot that is not related to correlation, such as a bar chart of one 2-4 variables per state. 
+A possible addition is to add some of the other variables in our map. For example, coloring the state by population so a higher population would have a darker red background for the state whereas a lower population would have a light red color, etc. Another addition is to add an extra plot that is not related to correlation, such as a bar chart of one 2-4 variables per state.
+Finally we want to add a download button to give the user the capability of exporting data for further analysis or presentations.
