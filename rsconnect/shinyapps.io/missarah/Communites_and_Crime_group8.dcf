@@ -5,10 +5,10 @@ account: missarah
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8352812
-bundleId: 6914203
+bundleId: 6916331
 url: https://missarah.shinyapps.io/Communites_and_Crime_group8/
-when: 1677895061.37613
-lastSyncTime: 1677895061.37614
+when: 1677968170.90915
+lastSyncTime: 1677968170.90916
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .ipynb_checkpoints/app-checkpoint.R|.ipynb_checkpoints/README-checkpoint.md|reports/.ipynb_checkpoints/proposal-checkpoint.md
