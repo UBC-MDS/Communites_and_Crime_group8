@@ -183,7 +183,8 @@ server <- function(input, output, session) {
               options=list(deferRender = TRUE,
                            scrollY = 200,
                            scroller = TRUE))  %>%
-      formatStyle(colnames(filtered_data_table), backgroundColor = styleInterval(brks, clrs))
+      formatStyle(colnames(filtered_data_table), 
+                  color = 'black')
   })
     
   ## LEAFLET MAP
