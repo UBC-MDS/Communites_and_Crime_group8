@@ -276,4 +276,5 @@ server <- function(input, output, session) {
   })
 }
 
+# Creates Shiny Aapp
 shinyApp(ui, server)
