@@ -129,7 +129,7 @@ server <- function(input, output, session) {
     if (input$state == 'All'){
       citiesToShow = data %>% dplyr::pull(area)
     }else{
-      #Filter countries based on current continent selection
+      # Filter countries based on current continent selection
       citiesToShow = data %>% 
         dplyr::filter(state %in% input$state) %>% dplyr::pull(area)
     }
@@ -137,7 +137,7 @@ server <- function(input, output, session) {
     print(input$state)
     print(citiesToShow)
     
-    #Update the actual input
+    # Update the actual input
     updateSelectInput(session, "city", choices = c('All',sort(citiesToShow)), 
                       selected = 'All')
     
@@ -206,10 +206,6 @@ server <- function(input, output, session) {
   ## LEAFLET MAP
   
   output$map <- leaflet::renderLeaflet({
-    
-    # print(input$daterange)
-    # str(input$daterange)
-    # print(input$table_rows_selected)
     
     ## color palette
     pal <- leaflet::colorNumeric('viridis', 
