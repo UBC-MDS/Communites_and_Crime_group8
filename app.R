@@ -34,35 +34,53 @@ my_theme <- bs_theme(bootswatch = "darkly",
 # Define UI
 ui <- navbarPage('Crime Rate Finder App',
                  theme = my_theme,
+                 
+                 # First tab - Data Exploration
                  tabPanel('Data Exploration',
+                          # Set height of map to 90% of viewport height minus 80px
                           tags$style(type = "text/css", "#map {height: calc(90vh - 80px) !important;}"),
-                          sidebarLayout(column(3,selectInput(inputId = 'state',
-                                                             label = 'Select State:',
-                                                             choices = c('All',sort(unique(data$state))),
-                                                             selected = 'All'),
-                                               selectInput(inputId = 'city',
-                                                           label = 'Select Community:',
-                                                           choices = c())),
-                                        column(9, leaflet::leafletOutput(outputId = 'map')))
-                          
+                          sidebarLayout(
+                            # Sidebar with state and community select inputs
+                            column(3,
+                                   selectInput(inputId = 'state',
+                                               label = 'Select State:',
+                                               choices = c('All',sort(unique(data$state))),
+                                               selected = 'All'),
+                                   selectInput(inputId = 'city',
+                                               label = 'Select Community:',
+                                               choices = c())
+                            ),
+                            # Main panel with leaflet map output
+                            column(9,
+                                   leaflet::leafletOutput(outputId = 'map'))
+                          )
                  ),
+                 
+                 # Second tab - Correlation
                  tabPanel('Correlation',
                           sidebarLayout(
+                            # Sidebar with state select input
                             sidebarPanel(
                               selectInput(inputId = 'corr_plot',
                                           label = 'Select State:',
                                           choices = unique(data$state),
                                           selected = 'Alabama')
                             ),
+                            # Main panel with correlation plot output
                             mainPanel(
                               tabsetPanel(
                                 tabPanel('Correlation by State',
                                          plotlyOutput(outputId = 'corrplot')
                                 )
-                              )))),
+                              )
+                            )
+                          )
+                 ),
                  
+                 # Third tab - Scatter
                  tabPanel('Scatter',
                           sidebarLayout(
+                            # Sidebar with state and variable select inputs
                             sidebarPanel(
                               selectInput(inputId = 'state_plot',
                                           label = 'Select State:',
@@ -73,6 +91,7 @@ ui <- navbarPage('Crime Rate Finder App',
                                           choices = c(colnames(data)[-(1:6)]),
                                           selected = 'population')
                             ),
+                            # Main panel with catter plot and DT table outputs
                             mainPanel(
                               tabsetPanel(
                                 tabPanel('Scatterplot',
@@ -82,9 +101,64 @@ ui <- navbarPage('Crime Rate Finder App',
                                          DT::DTOutput(outputId = 'table'))
                               )
                             )
-                          ))
-                 
+                          )
+                 )
 )
+
+# # Define UI
+# ui <- navbarPage('Crime Rate Finder App',
+#                  theme = my_theme,
+#                  tabPanel('Data Exploration',
+#                           tags$style(type = "text/css", "#map {height: calc(90vh - 80px) !important;}"),
+#                           sidebarLayout(column(3,selectInput(inputId = 'state',
+#                                                              label = 'Select State:',
+#                                                              choices = c('All',sort(unique(data$state))),
+#                                                              selected = 'All'),
+#                                                selectInput(inputId = 'city',
+#                                                            label = 'Select Community:',
+#                                                            choices = c())),
+#                                         column(9, leaflet::leafletOutput(outputId = 'map')))
+#                           
+#                  ),
+#                  tabPanel('Correlation',
+#                           sidebarLayout(
+#                             sidebarPanel(
+#                               selectInput(inputId = 'corr_plot',
+#                                           label = 'Select State:',
+#                                           choices = unique(data$state),
+#                                           selected = 'Alabama')
+#                             ),
+#                             mainPanel(
+#                               tabsetPanel(
+#                                 tabPanel('Correlation by State',
+#                                          plotlyOutput(outputId = 'corrplot')
+#                                 )
+#                               )))),
+#                  
+#                  tabPanel('Scatter',
+#                           sidebarLayout(
+#                             sidebarPanel(
+#                               selectInput(inputId = 'state_plot',
+#                                           label = 'Select State:',
+#                                           choices = unique(data$state),
+#                                           selected = 'Alabama'),
+#                               selectInput(inputId = 'var',
+#                                           label = 'Select Variable:',
+#                                           choices = c(colnames(data)[-(1:6)]),
+#                                           selected = 'population')
+#                             ),
+#                             mainPanel(
+#                               tabsetPanel(
+#                                 tabPanel('Scatterplot',
+#                                          plotlyOutput(outputId = 'lineplot')
+#                                 ),
+#                                 tabPanel('Communities in the State',
+#                                          DT::DTOutput(outputId = 'table'))
+#                               )
+#                             )
+#                           ))
+#                  
+# )
 
 server <- function(input, output, session) {
   
