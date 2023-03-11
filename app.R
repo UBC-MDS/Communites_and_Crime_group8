@@ -19,9 +19,10 @@ library(ggcorrplot)
 
 # Load data
 data <- read.csv("data/processed_communities.csv") |>
-  select(c('area','type', 'state','latitude','longitude','violent_crime_rate','population', 
-           'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 'racePctHisp', 
-           'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 'PctUnemployed'))
+  select(c('area', 'type', 'state', 'latitude', 'longitude', 'violent_crime_rate',
+           'population', 'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 
+           'racePctHisp', 'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 
+           'PctUnemployed'))
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
