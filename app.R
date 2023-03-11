@@ -6,6 +6,8 @@
 #
 #    http://shiny.rstudio.com/
 #
+
+# Import libraries
 library(shiny)
 library(bslib)
 library(leaflet)
@@ -15,6 +17,7 @@ library(plotly)
 library(thematic)
 library(ggcorrplot)
 
+# Load data
 data <- read.csv("data/processed_communities.csv") |>
   select(c('area','type', 'state','latitude','longitude','violent_crime_rate','population', 
            'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 'racePctHisp', 
@@ -23,9 +26,11 @@ data <- read.csv("data/processed_communities.csv") |>
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
 
+# Set theme and font style
 my_theme <- bs_theme(bootswatch = "darkly",
                      base_font = font_google("Righteous"))
 
+# Define UI
 ui <- navbarPage('Crime Rate Finder App',
                  theme = my_theme,
                  tabPanel('Data Exploration',
