@@ -191,7 +191,7 @@ server <- function(input, output, session) {
       {paste0("rgb(150,", ., ",", ., ")")}
     
     # Select columns to display
-    filtered_data_table <- filtered_data_plot()|>
+    filtered_data_table <- filtered_data_plot() |>
       select(c('area','type',input$var,'violent_crime_rate'))
     
     # Render the table
@@ -200,7 +200,7 @@ server <- function(input, output, session) {
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
-                           scroller = TRUE))  %>%
+                           scroller = TRUE)) |>
       formatStyle(colnames(filtered_data_table), 
                   color = 'black')
   })
