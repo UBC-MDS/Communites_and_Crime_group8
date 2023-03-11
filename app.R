@@ -217,7 +217,7 @@ server <- function(input, output, session) {
     # Add map tiles and markers
     filtered_data() |> 
       leaflet::leaflet() |> 
-      leaflet::addProviderTiles(providers$CartoDB.Positron) %>% addTiles() %>% addMarkers(
+      leaflet::addProviderTiles(providers$CartoDB.Positron) |> addTiles() |> addMarkers(
         
         popup = paste(filtered_data()$area,
                       "in",
