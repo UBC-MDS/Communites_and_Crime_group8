@@ -184,6 +184,8 @@ server <- function(input, output, session) {
   })
   
   ## DT TABLE
+  # This code generates a table displaying crime rates by community
+  
   output$table <-  renderDT({
     # Compute breaks for color palette
     brks <- quantile(data$testrun, probs = seq(.05, .95, .01), na.rm = TRUE) 
@@ -201,6 +203,7 @@ server <- function(input, output, session) {
               options=list(deferRender = TRUE,
                            scrollY = 200,
                            scroller = TRUE)) |>
+      # Format column styles
       formatStyle(colnames(filtered_data_table), 
                   color = 'black')
   })
