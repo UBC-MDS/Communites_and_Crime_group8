@@ -13,7 +13,6 @@ library(DT)
 library(ggplot2)
 library(plotly)
 library(thematic)
-library(forcats)
 library(ggcorrplot)
 
 data <- read.csv("data/processed_communities.csv") |>
@@ -78,7 +77,7 @@ ui <- navbarPage('Crime Rate Finder App',
                               )
                             )
                           ))
-
+                 
 )
 server <- function(input, output, session) {
   
@@ -103,7 +102,7 @@ server <- function(input, output, session) {
                        axis.text.y = element_text(margin=margin(0,-2,0,0), size = 8),
                        panel.grid.minor = element_line(size=10)) + 
         ggplot2::geom_tile(height=0.8, width=0.8)
-      )
+    )
     
   })
   
@@ -152,7 +151,7 @@ server <- function(input, output, session) {
   output$lineplot <- plotly::renderPlotly({ 
     
     thematic_on(font = "Righteous")
-  
+    
     plotly::ggplotly(
       filtered_data_plot() |>
         ggplot2::ggplot(aes(x = .data[[input$var]],
@@ -176,16 +175,17 @@ server <- function(input, output, session) {
     
     filtered_data_table <- filtered_data_plot()|>
       select(c('area','type',input$var,'violent_crime_rate'))
-
+    
     datatable(filtered_data_table,
               caption = 'Table: Observations by Community ',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
                            scroller = TRUE))  %>%
-      formatStyle(colnames(filtered_data_table), backgroundColor = styleInterval(brks, clrs))
+      formatStyle(colnames(filtered_data_table), 
+                  color = 'black')
   })
-    
+  
   ## LEAFLET MAP
   
   output$map <- leaflet::renderLeaflet({
