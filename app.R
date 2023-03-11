@@ -185,14 +185,16 @@ server <- function(input, output, session) {
   
   ## DT TABLE
   output$table <-  renderDT({
-    
+    # Compute breaks for color palette
     brks <- quantile(data$testrun, probs = seq(.05, .95, .01), na.rm = TRUE) 
     clrs <- round(seq(150, 40, length.out = length(brks) + 1), 0) %>%
       {paste0("rgb(150,", ., ",", ., ")")}
     
+    # Select columns to display
     filtered_data_table <- filtered_data_plot()|>
       select(c('area','type',input$var,'violent_crime_rate'))
     
+    # Render the table
     datatable(filtered_data_table,
               caption = 'Table: Observations by Community ',
               extensions = 'Scroller',
