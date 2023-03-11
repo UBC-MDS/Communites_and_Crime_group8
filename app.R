@@ -206,13 +206,15 @@ server <- function(input, output, session) {
   })
   
   ## LEAFLET MAP
+  # This code generates a leaflet map displaying crime rates by community
   
   output$map <- leaflet::renderLeaflet({
     
-    ## color palette
+    # Color palette
     pal <- leaflet::colorNumeric('viridis', 
                                  domain = data$violent_crime_rate)
     
+    # Add map tiles and markers
     filtered_data() |> 
       leaflet::leaflet() |> 
       leaflet::addProviderTiles(providers$CartoDB.Positron) %>% addTiles() %>% addMarkers(
