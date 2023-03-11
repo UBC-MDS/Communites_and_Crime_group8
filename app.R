@@ -85,28 +85,39 @@ ui <- navbarPage('Crime Rate Finder App',
                           ))
                  
 )
+
 server <- function(input, output, session) {
   
   thematic_shiny(font = "auto")
   ggplot2::theme_set(ggplot2::theme_minimal())
   
-  ##CORRELATION PLOT
-  output$corrplot <- plotly::renderPlotly({ 
+  ## CORRELATION PLOT
+  output$corrplot <- plotly::renderPlotly({
+    # Filter the selected state, and remove unnecessary columns and NAs
     filtered_data_corr <- data |> 
       dplyr::filter(state == input$corr_plot) |> 
       dplyr::select(-c('area','type', 'state','latitude','longitude')) |> 
       tidyr::drop_na()
     
+    # Compute the correlation matrix, and round it up to one decimal
     corr <- round(cor(filtered_data_corr), 1)
     
+    # Create the correlation plot
     plotly::ggplotly(
-      ggcorrplot::ggcorrplot(corr, outline.col = "white",ggtheme = ggplot2::theme_gray, 
-                             p.mat = NULL, insig = c("pch", "blank"), pch = 1, 
-                             pch.col = "black", pch.cex =1,
+      ggcorrplot::ggcorrplot(corr, 
+                             outline.col = "white",
+                             ggtheme = ggplot2::theme_gray, 
+                             p.mat = NULL, 
+                             insig = c("pch", "blank"), 
+                             pch = 1, 
+                             pch.col = "black", 
+                             pch.cex =1,
                              tl.cex = 14) +
+        # Customize the plot by changing the size and color of the axis text
         ggplot2::theme(axis.text.x = element_text(margin=margin(-2,0,0,0), size = 8),
                        axis.text.y = element_text(margin=margin(0,-2,0,0), size = 8),
                        panel.grid.minor = element_line(size=10)) + 
+        # Add tiles to customize the plot
         ggplot2::geom_tile(height=0.8, width=0.8)
     )
     
