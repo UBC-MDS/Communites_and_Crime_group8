@@ -8,6 +8,7 @@
 #
 
 # Import libraries
+library(readr)
 library(shiny)
 library(bslib)
 library(leaflet)
@@ -18,11 +19,30 @@ library(thematic)
 library(ggcorrplot)
 
 # Load data
-data <- read.csv("data/processed_communities.csv") |>
-  select(c('area', 'type', 'state', 'latitude', 'longitude', 'violent_crime_rate',
-           'population', 'PopDens', 'racepctblack', 'racePctWhite', 'racePctAsian', 
-           'racePctHisp', 'agePct12t29', 'agePct65up', 'medIncome', 'NumStreet', 
-           'PctUnemployed'))
+data <- read_csv("data/processed_communities.csv", 
+                        col_types = cols_only(
+                          area = col_character(),
+                          type = col_character(),
+                          state = col_character(),
+                          latitude = col_double(),
+                          longitude = col_double(),
+                          violent_crime_rate = col_double(),
+                          population = col_double(),
+                          PopDens = col_double(),
+                          racepctblack = col_double(),
+                          racePctWhite = col_double(),
+                          racePctAsian = col_double(),
+                          racePctHisp = col_double(),
+                          agePct12t29 = col_double(),
+                          agePct65up = col_double(),
+                          medIncome = col_double(),
+                          NumStreet = col_double(),
+                          PctUnemployed = col_double()
+                        )) |>
+  select(area, type, state, latitude, longitude, violent_crime_rate, 
+         population, PopDens, racepctblack, racePctWhite, racePctAsian, 
+         racePctHisp, agePct12t29, agePct65up, medIncome, NumStreet, 
+         PctUnemployed)
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
@@ -146,7 +166,8 @@ server <- function(input, output, session) {
     
   })
   
-  ## LINEPLOT
+  ## LINE PLOT
+  # This code generates a line plot displaying crime rates by community
   
   observeEvent(input$state, {
     if (input$state == 'All'){
