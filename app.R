@@ -105,61 +105,10 @@ ui <- navbarPage('Crime Rate Finder App',
                  )
 )
 
-# # Define UI
-# ui <- navbarPage('Crime Rate Finder App',
-#                  theme = my_theme,
-#                  tabPanel('Data Exploration',
-#                           tags$style(type = "text/css", "#map {height: calc(90vh - 80px) !important;}"),
-#                           sidebarLayout(column(3,selectInput(inputId = 'state',
-#                                                              label = 'Select State:',
-#                                                              choices = c('All',sort(unique(data$state))),
-#                                                              selected = 'All'),
-#                                                selectInput(inputId = 'city',
-#                                                            label = 'Select Community:',
-#                                                            choices = c())),
-#                                         column(9, leaflet::leafletOutput(outputId = 'map')))
-#                           
-#                  ),
-#                  tabPanel('Correlation',
-#                           sidebarLayout(
-#                             sidebarPanel(
-#                               selectInput(inputId = 'corr_plot',
-#                                           label = 'Select State:',
-#                                           choices = unique(data$state),
-#                                           selected = 'Alabama')
-#                             ),
-#                             mainPanel(
-#                               tabsetPanel(
-#                                 tabPanel('Correlation by State',
-#                                          plotlyOutput(outputId = 'corrplot')
-#                                 )
-#                               )))),
-#                  
-#                  tabPanel('Scatter',
-#                           sidebarLayout(
-#                             sidebarPanel(
-#                               selectInput(inputId = 'state_plot',
-#                                           label = 'Select State:',
-#                                           choices = unique(data$state),
-#                                           selected = 'Alabama'),
-#                               selectInput(inputId = 'var',
-#                                           label = 'Select Variable:',
-#                                           choices = c(colnames(data)[-(1:6)]),
-#                                           selected = 'population')
-#                             ),
-#                             mainPanel(
-#                               tabsetPanel(
-#                                 tabPanel('Scatterplot',
-#                                          plotlyOutput(outputId = 'lineplot')
-#                                 ),
-#                                 tabPanel('Communities in the State',
-#                                          DT::DTOutput(outputId = 'table'))
-#                               )
-#                             )
-#                           ))
-#                  
-# )
-
+# Define the server function of the Shiny app.
+# This function contains the server-side logic of the Shiny app, 
+# which is responsible for rendering the UI and handling user input. 
+# It takes three arguments: `input`, `output`, and `session`.
 server <- function(input, output, session) {
   
   thematic_shiny(font = "auto")
