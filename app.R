@@ -19,7 +19,7 @@ library(thematic)
 library(ggcorrplot)
 
 # Load data
-data <- read_csv("data/processed_communities.csv", 
+data <- readr::read_csv("data/processed_communities.csv", 
                         col_types = cols_only(
                           area = col_character(),
                           type = col_character(),
@@ -64,7 +64,7 @@ ui <- navbarPage('Crime Rate Finder App',
                             column(3,
                                    selectInput(inputId = 'state',
                                                label = 'Select State:',
-                                               choices = c('All',sort(unique(data$state))),
+                                               choices = c('All', sort(unique(data$state))),
                                                selected = 'All'),
                                    selectInput(inputId = 'city',
                                                label = 'Select Community:',
@@ -182,7 +182,7 @@ server <- function(input, output, session) {
     print(citiesToShow)
     
     # Update the actual input
-    updateSelectInput(session, "city", choices = c('All',sort(citiesToShow)), 
+    updateSelectInput(session, "city", choices = c('All', sort(citiesToShow)), 
                       selected = 'All')
     
   })
@@ -276,5 +276,5 @@ server <- function(input, output, session) {
   })
 }
 
-# Creates Shiny Aapp
+# Create Shiny Aapp
 shinyApp(ui, server)
