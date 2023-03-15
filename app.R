@@ -122,6 +122,31 @@ ui <- navbarPage('Crime Rate Finder App',
                               )
                             )
                           )
+                 ),
+                 
+                 # Fourth Tab - More Information
+                 tabPanel('More Information',
+                          br(),
+                          p('Thank you for using our app!'),
+                          br(),
+                          p('If you want to know more about the app, 
+                            please visit our GitHub repository:'),
+                          tags$a(href = 'https://github.com/UBC-MDS/Communites_and_Crime_group8', 
+                                 'GitHub'),
+                          br(),
+                          br(),
+                          p('Here attachs some other useful links:'),
+                          tags$a(href = 'https://ucr.fbi.gov/crime-in-the-u.s', 
+                                 'FBI Crime Report'),
+                          br(),
+                          tags$a(href = 'https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend',
+                                 'FBI Crime Data Explorer'),
+                          br(),
+                          tags$a(href = 'https://archive.ics.uci.edu/ml/datasets/communities+and+crime',
+                                 'UCI Communities and Crime Data Set'),
+                          br(),
+                          tags$a(href = 'https://en.wikipedia.org/wiki/Crime_in_the_United_States',
+                                 'Crime in the United States -- Wikipedia')
                  )
 )
 
