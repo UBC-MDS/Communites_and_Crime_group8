@@ -17,1736 +17,1657 @@
     "city": "All",
     "corr_panel": "Correlation by State",
     "corr_plot": "Alabama",
-    "main_page": "Correlation",
+    "main_page": "Scatter",
     "map_bounds": {
-      "north": 72.3957057065326,
-      "east": -33.92578125,
-      "south": 4.3902289264634,
-      "west": -183.8671875
+      "north": 48.4583518828087,
+      "east": -108.80859375,
+      "south": 48.4583518828087,
+      "west": -108.80859375
     },
     "map_center": {
-      "lng": -108.95449755,
-      "lat": 48.5208590866826
+      "lng": -108.80859375,
+      "lat": 48.4583518828087
     },
+    "map_groups": "Basemap",
     "map_zoom": 3,
-    "plotly_afterplot-A": "\"corrplot\"",
+    "plotly_afterplot-A": "\"lineplot\"",
     "scatter_panel": "Scatterplot",
     "state": "All",
-    "state_plot": "Alabama",
-    "var": "Population"
+    "state_plot": "California",
+    "var": "Asian Race Percentage"
   },
   "output": {
-    "corrplot": {
+    "lineplot": {
       "x": {
         "data": [
           {
             "x": [
+              0.35,
+              0.16,
               1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12
+              0.98,
+              0.28,
+              1,
+              0.96,
+              0.34,
+              1,
+              0.1,
+              1,
+              0.5,
+              0.2,
+              0.62,
+              0.34,
+              0.81,
+              0.19,
+              0.84,
+              0.13,
+              1,
+              1,
+              0.2,
+              0.19,
+              0.21,
+              0.15,
+              0.21,
+              1,
+              0.06,
+              0.31,
+              0.38,
+              0.08,
+              0.42,
+              0.64,
+              0.28,
+              1,
+              0.57,
+              0.6,
+              0.61,
+              0.45,
+              1,
+              0.3,
+              0.84,
+              0.33,
+              0.19,
+              0.21,
+              0.43,
+              0.24,
+              1,
+              1,
+              0.08,
+              1,
+              0.92,
+              0.37,
+              0.36,
+              0.11,
+              1,
+              0.41,
+              0.21,
+              0.76,
+              1,
+              0.17,
+              0.06,
+              1,
+              0.94,
+              0.27,
+              0.16,
+              0.89,
+              1,
+              0.4,
+              0.28,
+              0.72,
+              0.37,
+              0.4,
+              0.54,
+              0.12,
+              0.74,
+              0.3,
+              0.47,
+              0.18,
+              0.26,
+              0.37,
+              1,
+              1,
+              0.11,
+              0.17,
+              0.47,
+              0.08,
+              0.42,
+              1,
+              0.92,
+              0.38,
+              0.74,
+              0.19,
+              0.17,
+              0.23,
+              0.22,
+              0.55,
+              0.73,
+              0.23,
+              0.87,
+              0.4,
+              0.54,
+              1,
+              0.25,
+              0.36,
+              1,
+              0.75,
+              0.55,
+              0.14,
+              0.15,
+              0.41,
+              0.77,
+              0.35,
+              0.48,
+              1,
+              0.33,
+              0.93,
+              0.28,
+              1,
+              0.13,
+              0.75,
+              0.29,
+              1,
+              0.31,
+              0.27,
+              0.15,
+              0.91,
+              0.07,
+              0.76,
+              0.5,
+              0.83,
+              0.27,
+              1,
+              0.39,
+              0.37,
+              0.72,
+              0.39,
+              0.25,
+              1,
+              0.31,
+              0.64,
+              0.15,
+              0.29,
+              1,
+              0.21,
+              0.14,
+              0.32,
+              0.25,
+              0.41,
+              0.16,
+              0.22,
+              0.74,
+              0.49,
+              0.23,
+              0.25,
+              1,
+              1,
+              0.19,
+              0.24,
+              0.62,
+              1,
+              0.67,
+              0.84,
+              0.48,
+              0.22,
+              0.41,
+              0.33,
+              0.42,
+              0.42,
+              0.6,
+              0.07,
+              0.23,
+              0.1,
+              1,
+              0.56,
+              0.09,
+              0.37,
+              0.91,
+              0.07,
+              0.11,
+              0.22,
+              1,
+              0.31,
+              0.42,
+              0.91,
+              1,
+              0.09,
+              0.1,
+              0.33,
+              0.09,
+              0.06,
+              1,
+              0.11,
+              0.43,
+              0.41,
+              0.28,
+              0.44,
+              1,
+              0.2,
+              0.53,
+              0.85,
+              0.03,
+              0.31,
+              0.5,
+              1,
+              0.52,
+              0.09,
+              0.04,
+              0.44,
+              1,
+              0.22,
+              0.23,
+              0.66,
+              1,
+              1,
+              0.11,
+              0.06,
+              0.42,
+              0.07,
+              0.19,
+              0.56,
+              0.77,
+              0.2,
+              0.35,
+              0.08,
+              0.59,
+              0.82,
+              0.06,
+              0.3,
+              0.24,
+              1,
+              1,
+              0.44,
+              0.45,
+              0.27,
+              1,
+              1,
+              0.14,
+              0.29,
+              0.39,
+              0.27,
+              0.31,
+              0.2,
+              0.29,
+              0.75,
+              0.53,
+              0.39,
+              0.72,
+              0.62,
+              1,
+              1,
+              0.2,
+              0.48,
+              0.13,
+              0.33,
+              0.32,
+              0.19,
+              0.34,
+              0.05,
+              0.11,
+              0.58,
+              0.26,
+              0.42,
+              0.15,
+              0.41,
+              0.06,
+              1,
+              0.21,
+              0.53,
+              1,
+              0.51,
+              0.2,
+              0.83,
+              0.34,
+              1,
+              1,
+              0.15,
+              0.36
             ],
             "y": [
+              0.06,
+              0.16,
               1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12
-            ],
-            "z": [
-              [
-                1,
-                0.65,
-                0.55,
-                0.85,
-                0.15,
-                0.45,
-                0.4,
-                0.5,
-                0.6,
-                0.25,
-                0.65,
-                0.85
-              ],
-              [
-                0.65,
-                1,
-                0.6,
-                0.7,
-                0.3,
-                0.6,
-                0.55,
-                0.5,
-                0.45,
-                0.45,
-                0.85,
-                0.6
-              ],
-              [
-                0.55,
-                0.6,
-                1,
-                0.55,
-                0.4,
-                0.55,
-                0.4,
-                0.5,
-                0.55,
-                0.6,
-                0.55,
-                0.55
-              ],
-              [
-                0.85,
-                0.7,
-                0.55,
-                1,
-                0,
-                0.4,
-                0.35,
-                0.6,
-                0.55,
-                0.2,
-                0.65,
-                0.95
-              ],
-              [
-                0.15,
-                0.3,
-                0.4,
-                0,
-                1,
-                0.6,
-                0.65,
-                0.4,
-                0.45,
-                0.8,
-                0.3,
-                0.05
-              ],
-              [
-                0.45,
-                0.6,
-                0.55,
-                0.4,
-                0.6,
-                1,
-                0.8,
-                0.75,
-                0.2,
-                0.6,
-                0.5,
-                0.4
-              ],
-              [
-                0.4,
-                0.55,
-                0.4,
-                0.35,
-                0.65,
-                0.8,
-                1,
-                0.65,
-                0.25,
-                0.6,
-                0.5,
-                0.4
-              ],
-              [
-                0.5,
-                0.5,
-                0.5,
-                0.6,
-                0.4,
-                0.75,
-                0.65,
-                1,
-                0.25,
-                0.3,
-                0.5,
-                0.65
-              ],
-              [
-                0.6,
-                0.45,
-                0.55,
-                0.55,
-                0.45,
-                0.2,
-                0.25,
-                0.25,
-                1,
-                0.35,
-                0.5,
-                0.6
-              ],
-              [
-                0.25,
-                0.45,
-                0.6,
-                0.2,
-                0.8,
-                0.6,
-                0.6,
-                0.3,
-                0.35,
-                1,
-                0.45,
-                0.15
-              ],
-              [
-                0.65,
-                0.85,
-                0.55,
-                0.65,
-                0.3,
-                0.5,
-                0.5,
-                0.5,
-                0.5,
-                0.45,
-                1,
-                0.6
-              ],
-              [
-                0.85,
-                0.6,
-                0.55,
-                0.95,
-                0.05,
-                0.4,
-                0.4,
-                0.65,
-                0.6,
-                0.15,
-                0.6,
-                1
-              ]
+              0.33,
+              0.13,
+              0.1,
+              0.46,
+              0.12,
+              0.25,
+              0.39,
+              0.13,
+              0.5,
+              0.22,
+              0.04,
+              0.23,
+              0.06,
+              0.2,
+              0.26,
+              1,
+              0.23,
+              0.26,
+              0.19,
+              1,
+              0.43,
+              0.36,
+              0.14,
+              0.2,
+              0.1,
+              0.11,
+              0.09,
+              0.54,
+              0.29,
+              0.1,
+              0.39,
+              0.19,
+              0.41,
+              1,
+              0.07,
+              0.36,
+              0.52,
+              0.86,
+              0.13,
+              0.2,
+              0.56,
+              0.22,
+              0.41,
+              1,
+              0.37,
+              0.12,
+              1,
+              0.16,
+              0.53,
+              0.42,
+              0.25,
+              0.68,
+              0.08,
+              0.5,
+              0.39,
+              0.83,
+              0.34,
+              0.22,
+              0.4,
+              0.13,
+              0.23,
+              0.35,
+              0.07,
+              0.24,
+              0.22,
+              0.24,
+              0.19,
+              0.33,
+              0.1,
+              0.01,
+              0.21,
+              0.9,
+              0.82,
+              0.23,
+              0.28,
+              0.16,
+              0.45,
+              0.08,
+              0.61,
+              0.14,
+              0.62,
+              0.37,
+              0.27,
+              0.36,
+              0.25,
+              0.16,
+              0.07,
+              0.15,
+              0.41,
+              0.24,
+              0.13,
+              0.26,
+              0.29,
+              0.3,
+              1,
+              0.5,
+              0.15,
+              0.19,
+              0.11,
+              0.22,
+              0.33,
+              0.13,
+              0.37,
+              0.25,
+              0.03,
+              0.42,
+              0.38,
+              0.27,
+              0.06,
+              0.81,
+              0.69,
+              0.25,
+              0.14,
+              0.53,
+              0.29,
+              0.33,
+              0.2,
+              0.22,
+              0.36,
+              0.25,
+              0.18,
+              0.49,
+              0.28,
+              0.67,
+              0.14,
+              0.48,
+              0.53,
+              0.45,
+              0.3,
+              0.75,
+              0.3,
+              0.32,
+              0.48,
+              0.11,
+              0.26,
+              0.2,
+              0.16,
+              0.14,
+              0.29,
+              0.13,
+              0.11,
+              0.25,
+              0.32,
+              0.63,
+              0.29,
+              0.67,
+              0.16,
+              0.36,
+              0.38,
+              0.11,
+              0.18,
+              0.37,
+              0.05,
+              0.38,
+              0.24,
+              0.19,
+              0.06,
+              0.16,
+              1,
+              0.04,
+              0.2,
+              0.4,
+              0.1,
+              0.19,
+              0.2,
+              0.15,
+              0.45,
+              0.41,
+              0.22,
+              0.45,
+              0.6,
+              0.38,
+              0.16,
+              0.3,
+              1,
+              0.38,
+              0.66,
+              0.51,
+              0.12,
+              0.06,
+              0.2,
+              0.17,
+              0.2,
+              0.16,
+              0.51,
+              0.1,
+              0.31,
+              0.26,
+              0.27,
+              0.31,
+              0.22,
+              0.12,
+              0.55,
+              0.21,
+              0.03,
+              0.57,
+              0.41,
+              0.37,
+              0.32,
+              0.25,
+              0.14,
+              0.65,
+              0.15,
+              0.47,
+              0.36,
+              0.15,
+              0.15,
+              0.57,
+              0.12,
+              0.39,
+              0.14,
+              0.52,
+              0.33,
+              0.7,
+              0.54,
+              0.14,
+              0.28,
+              0.53,
+              0.59,
+              0.52,
+              0.14,
+              0.25,
+              0.97,
+              0.18,
+              0.36,
+              0.3,
+              0.48,
+              0.2,
+              0.24,
+              0.11,
+              0.37,
+              0.14,
+              0.08,
+              0.14,
+              0.21,
+              0.4,
+              0.68,
+              0.45,
+              0.24,
+              0.26,
+              0.49,
+              0.36,
+              0.25,
+              0.32,
+              0.54,
+              0.7,
+              0.84,
+              0.31,
+              0.21,
+              0.34,
+              0.25,
+              0.45,
+              0.68,
+              0.22,
+              0.62,
+              0.29,
+              0.18,
+              0.16,
+              0.1,
+              0.02,
+              0.31,
+              0.51,
+              0.15,
+              0.27,
+              0.08,
+              0.22,
+              0.26,
+              0.27,
+              0.55,
+              0.67,
+              0.17,
+              0.14,
+              0.68,
+              0.86,
+              0.03
             ],
             "text": [
-              [
-                "value:  1.0<br />Var1: Violent Crime Rate<br />Var2: Violent Crime Rate",
-                "value:  0.3<br />Var1: Population<br />Var2: Violent Crime Rate",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Violent Crime Rate",
-                "value:  0.7<br />Var1: Black Race Percentage<br />Var2: Violent Crime Rate",
-                "value: -0.7<br />Var1: White Rate Percentage<br />Var2: Violent Crime Rate",
-                "value: -0.1<br />Var1: Asian Race Percentage<br />Var2: Violent Crime Rate",
-                "value: -0.2<br />Var1: Hispanic Race Percentage<br />Var2: Violent Crime Rate",
-                "value:  0.0<br />Var1: Age Range Percentage (12-29)<br />Var2: Violent Crime Rate",
-                "value:  0.2<br />Var1: Age Range Percentage (65+)<br />Var2: Violent Crime Rate",
-                "value: -0.5<br />Var1: Median Income<br />Var2: Violent Crime Rate",
-                "value:  0.3<br />Var1: Number of Streets<br />Var2: Violent Crime Rate",
-                "value:  0.7<br />Var1: Unemployed Percentage<br />Var2: Violent Crime Rate"
-              ],
-              [
-                "value:  0.3<br />Var1: Violent Crime Rate<br />Var2: Population",
-                "value:  1.0<br />Var1: Population<br />Var2: Population",
-                "value:  0.2<br />Var1: Population Density<br />Var2: Population",
-                "value:  0.4<br />Var1: Black Race Percentage<br />Var2: Population",
-                "value: -0.4<br />Var1: White Rate Percentage<br />Var2: Population",
-                "value:  0.2<br />Var1: Asian Race Percentage<br />Var2: Population",
-                "value:  0.1<br />Var1: Hispanic Race Percentage<br />Var2: Population",
-                "value:  0.0<br />Var1: Age Range Percentage (12-29)<br />Var2: Population",
-                "value: -0.1<br />Var1: Age Range Percentage (65+)<br />Var2: Population",
-                "value: -0.1<br />Var1: Median Income<br />Var2: Population",
-                "value:  0.7<br />Var1: Number of Streets<br />Var2: Population",
-                "value:  0.2<br />Var1: Unemployed Percentage<br />Var2: Population"
-              ],
-              [
-                "value:  0.1<br />Var1: Violent Crime Rate<br />Var2: Population Density",
-                "value:  0.2<br />Var1: Population<br />Var2: Population Density",
-                "value:  1.0<br />Var1: Population Density<br />Var2: Population Density",
-                "value:  0.1<br />Var1: Black Race Percentage<br />Var2: Population Density",
-                "value: -0.2<br />Var1: White Rate Percentage<br />Var2: Population Density",
-                "value:  0.1<br />Var1: Asian Race Percentage<br />Var2: Population Density",
-                "value: -0.2<br />Var1: Hispanic Race Percentage<br />Var2: Population Density",
-                "value:  0.0<br />Var1: Age Range Percentage (12-29)<br />Var2: Population Density",
-                "value:  0.1<br />Var1: Age Range Percentage (65+)<br />Var2: Population Density",
-                "value:  0.2<br />Var1: Median Income<br />Var2: Population Density",
-                "value:  0.1<br />Var1: Number of Streets<br />Var2: Population Density",
-                "value:  0.1<br />Var1: Unemployed Percentage<br />Var2: Population Density"
-              ],
-              [
-                "value:  0.7<br />Var1: Violent Crime Rate<br />Var2: Black Race Percentage",
-                "value:  0.4<br />Var1: Population<br />Var2: Black Race Percentage",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Black Race Percentage",
-                "value:  1.0<br />Var1: Black Race Percentage<br />Var2: Black Race Percentage",
-                "value: -1.0<br />Var1: White Rate Percentage<br />Var2: Black Race Percentage",
-                "value: -0.2<br />Var1: Asian Race Percentage<br />Var2: Black Race Percentage",
-                "value: -0.3<br />Var1: Hispanic Race Percentage<br />Var2: Black Race Percentage",
-                "value:  0.2<br />Var1: Age Range Percentage (12-29)<br />Var2: Black Race Percentage",
-                "value:  0.1<br />Var1: Age Range Percentage (65+)<br />Var2: Black Race Percentage",
-                "value: -0.6<br />Var1: Median Income<br />Var2: Black Race Percentage",
-                "value:  0.3<br />Var1: Number of Streets<br />Var2: Black Race Percentage",
-                "value:  0.9<br />Var1: Unemployed Percentage<br />Var2: Black Race Percentage"
-              ],
-              [
-                "value: -0.7<br />Var1: Violent Crime Rate<br />Var2: White Rate Percentage",
-                "value: -0.4<br />Var1: Population<br />Var2: White Rate Percentage",
-                "value: -0.2<br />Var1: Population Density<br />Var2: White Rate Percentage",
-                "value: -1.0<br />Var1: Black Race Percentage<br />Var2: White Rate Percentage",
-                "value:  1.0<br />Var1: White Rate Percentage<br />Var2: White Rate Percentage",
-                "value:  0.2<br />Var1: Asian Race Percentage<br />Var2: White Rate Percentage",
-                "value:  0.3<br />Var1: Hispanic Race Percentage<br />Var2: White Rate Percentage",
-                "value: -0.2<br />Var1: Age Range Percentage (12-29)<br />Var2: White Rate Percentage",
-                "value: -0.1<br />Var1: Age Range Percentage (65+)<br />Var2: White Rate Percentage",
-                "value:  0.6<br />Var1: Median Income<br />Var2: White Rate Percentage",
-                "value: -0.4<br />Var1: Number of Streets<br />Var2: White Rate Percentage",
-                "value: -0.9<br />Var1: Unemployed Percentage<br />Var2: White Rate Percentage"
-              ],
-              [
-                "value: -0.1<br />Var1: Violent Crime Rate<br />Var2: Asian Race Percentage",
-                "value:  0.2<br />Var1: Population<br />Var2: Asian Race Percentage",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Asian Race Percentage",
-                "value: -0.2<br />Var1: Black Race Percentage<br />Var2: Asian Race Percentage",
-                "value:  0.2<br />Var1: White Rate Percentage<br />Var2: Asian Race Percentage",
-                "value:  1.0<br />Var1: Asian Race Percentage<br />Var2: Asian Race Percentage",
-                "value:  0.6<br />Var1: Hispanic Race Percentage<br />Var2: Asian Race Percentage",
-                "value:  0.5<br />Var1: Age Range Percentage (12-29)<br />Var2: Asian Race Percentage",
-                "value: -0.6<br />Var1: Age Range Percentage (65+)<br />Var2: Asian Race Percentage",
-                "value:  0.2<br />Var1: Median Income<br />Var2: Asian Race Percentage",
-                "value:  0.0<br />Var1: Number of Streets<br />Var2: Asian Race Percentage",
-                "value: -0.2<br />Var1: Unemployed Percentage<br />Var2: Asian Race Percentage"
-              ],
-              [
-                "value: -0.2<br />Var1: Violent Crime Rate<br />Var2: Hispanic Race Percentage",
-                "value:  0.1<br />Var1: Population<br />Var2: Hispanic Race Percentage",
-                "value: -0.2<br />Var1: Population Density<br />Var2: Hispanic Race Percentage",
-                "value: -0.3<br />Var1: Black Race Percentage<br />Var2: Hispanic Race Percentage",
-                "value:  0.3<br />Var1: White Rate Percentage<br />Var2: Hispanic Race Percentage",
-                "value:  0.6<br />Var1: Asian Race Percentage<br />Var2: Hispanic Race Percentage",
-                "value:  1.0<br />Var1: Hispanic Race Percentage<br />Var2: Hispanic Race Percentage",
-                "value:  0.3<br />Var1: Age Range Percentage (12-29)<br />Var2: Hispanic Race Percentage",
-                "value: -0.5<br />Var1: Age Range Percentage (65+)<br />Var2: Hispanic Race Percentage",
-                "value:  0.2<br />Var1: Median Income<br />Var2: Hispanic Race Percentage",
-                "value:  0.0<br />Var1: Number of Streets<br />Var2: Hispanic Race Percentage",
-                "value: -0.2<br />Var1: Unemployed Percentage<br />Var2: Hispanic Race Percentage"
-              ],
-              [
-                "value:  0.0<br />Var1: Violent Crime Rate<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.0<br />Var1: Population<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.0<br />Var1: Population Density<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.2<br />Var1: Black Race Percentage<br />Var2: Age Range Percentage (12-29)",
-                "value: -0.2<br />Var1: White Rate Percentage<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.5<br />Var1: Asian Race Percentage<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.3<br />Var1: Hispanic Race Percentage<br />Var2: Age Range Percentage (12-29)",
-                "value:  1.0<br />Var1: Age Range Percentage (12-29)<br />Var2: Age Range Percentage (12-29)",
-                "value: -0.5<br />Var1: Age Range Percentage (65+)<br />Var2: Age Range Percentage (12-29)",
-                "value: -0.4<br />Var1: Median Income<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.0<br />Var1: Number of Streets<br />Var2: Age Range Percentage (12-29)",
-                "value:  0.3<br />Var1: Unemployed Percentage<br />Var2: Age Range Percentage (12-29)"
-              ],
-              [
-                "value:  0.2<br />Var1: Violent Crime Rate<br />Var2: Age Range Percentage (65+)",
-                "value: -0.1<br />Var1: Population<br />Var2: Age Range Percentage (65+)",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Age Range Percentage (65+)",
-                "value:  0.1<br />Var1: Black Race Percentage<br />Var2: Age Range Percentage (65+)",
-                "value: -0.1<br />Var1: White Rate Percentage<br />Var2: Age Range Percentage (65+)",
-                "value: -0.6<br />Var1: Asian Race Percentage<br />Var2: Age Range Percentage (65+)",
-                "value: -0.5<br />Var1: Hispanic Race Percentage<br />Var2: Age Range Percentage (65+)",
-                "value: -0.5<br />Var1: Age Range Percentage (12-29)<br />Var2: Age Range Percentage (65+)",
-                "value:  1.0<br />Var1: Age Range Percentage (65+)<br />Var2: Age Range Percentage (65+)",
-                "value: -0.3<br />Var1: Median Income<br />Var2: Age Range Percentage (65+)",
-                "value:  0.0<br />Var1: Number of Streets<br />Var2: Age Range Percentage (65+)",
-                "value:  0.2<br />Var1: Unemployed Percentage<br />Var2: Age Range Percentage (65+)"
-              ],
-              [
-                "value: -0.5<br />Var1: Violent Crime Rate<br />Var2: Median Income",
-                "value: -0.1<br />Var1: Population<br />Var2: Median Income",
-                "value:  0.2<br />Var1: Population Density<br />Var2: Median Income",
-                "value: -0.6<br />Var1: Black Race Percentage<br />Var2: Median Income",
-                "value:  0.6<br />Var1: White Rate Percentage<br />Var2: Median Income",
-                "value:  0.2<br />Var1: Asian Race Percentage<br />Var2: Median Income",
-                "value:  0.2<br />Var1: Hispanic Race Percentage<br />Var2: Median Income",
-                "value: -0.4<br />Var1: Age Range Percentage (12-29)<br />Var2: Median Income",
-                "value: -0.3<br />Var1: Age Range Percentage (65+)<br />Var2: Median Income",
-                "value:  1.0<br />Var1: Median Income<br />Var2: Median Income",
-                "value: -0.1<br />Var1: Number of Streets<br />Var2: Median Income",
-                "value: -0.7<br />Var1: Unemployed Percentage<br />Var2: Median Income"
-              ],
-              [
-                "value:  0.3<br />Var1: Violent Crime Rate<br />Var2: Number of Streets",
-                "value:  0.7<br />Var1: Population<br />Var2: Number of Streets",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Number of Streets",
-                "value:  0.3<br />Var1: Black Race Percentage<br />Var2: Number of Streets",
-                "value: -0.4<br />Var1: White Rate Percentage<br />Var2: Number of Streets",
-                "value:  0.0<br />Var1: Asian Race Percentage<br />Var2: Number of Streets",
-                "value:  0.0<br />Var1: Hispanic Race Percentage<br />Var2: Number of Streets",
-                "value:  0.0<br />Var1: Age Range Percentage (12-29)<br />Var2: Number of Streets",
-                "value:  0.0<br />Var1: Age Range Percentage (65+)<br />Var2: Number of Streets",
-                "value: -0.1<br />Var1: Median Income<br />Var2: Number of Streets",
-                "value:  1.0<br />Var1: Number of Streets<br />Var2: Number of Streets",
-                "value:  0.2<br />Var1: Unemployed Percentage<br />Var2: Number of Streets"
-              ],
-              [
-                "value:  0.7<br />Var1: Violent Crime Rate<br />Var2: Unemployed Percentage",
-                "value:  0.2<br />Var1: Population<br />Var2: Unemployed Percentage",
-                "value:  0.1<br />Var1: Population Density<br />Var2: Unemployed Percentage",
-                "value:  0.9<br />Var1: Black Race Percentage<br />Var2: Unemployed Percentage",
-                "value: -0.9<br />Var1: White Rate Percentage<br />Var2: Unemployed Percentage",
-                "value: -0.2<br />Var1: Asian Race Percentage<br />Var2: Unemployed Percentage",
-                "value: -0.2<br />Var1: Hispanic Race Percentage<br />Var2: Unemployed Percentage",
-                "value:  0.3<br />Var1: Age Range Percentage (12-29)<br />Var2: Unemployed Percentage",
-                "value:  0.2<br />Var1: Age Range Percentage (65+)<br />Var2: Unemployed Percentage",
-                "value: -0.7<br />Var1: Median Income<br />Var2: Unemployed Percentage",
-                "value:  0.2<br />Var1: Number of Streets<br />Var2: Unemployed Percentage",
-                "value:  1.0<br />Var1: Unemployed Percentage<br />Var2: Unemployed Percentage"
-              ]
+              "Asian Race Percentage: 0.35<br />Violent Crime Rate: 0.06",
+              "Asian Race Percentage: 0.16<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.98<br />Violent Crime Rate: 0.33",
+              "Asian Race Percentage: 0.28<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.96<br />Violent Crime Rate: 0.46",
+              "Asian Race Percentage: 0.34<br />Violent Crime Rate: 0.12",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.10<br />Violent Crime Rate: 0.39",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 0.50<br />Violent Crime Rate: 0.50",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.62<br />Violent Crime Rate: 0.04",
+              "Asian Race Percentage: 0.34<br />Violent Crime Rate: 0.23",
+              "Asian Race Percentage: 0.81<br />Violent Crime Rate: 0.06",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.84<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 0.13<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.23",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.43",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 0.38<br />Violent Crime Rate: 0.09",
+              "Asian Race Percentage: 0.08<br />Violent Crime Rate: 0.54",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 0.64<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.28<br />Violent Crime Rate: 0.39",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.57<br />Violent Crime Rate: 0.41",
+              "Asian Race Percentage: 0.60<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.61<br />Violent Crime Rate: 0.07",
+              "Asian Race Percentage: 0.45<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.52",
+              "Asian Race Percentage: 0.30<br />Violent Crime Rate: 0.86",
+              "Asian Race Percentage: 0.84<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 0.33<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.56",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.43<br />Violent Crime Rate: 0.41",
+              "Asian Race Percentage: 0.24<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.12",
+              "Asian Race Percentage: 0.08<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.92<br />Violent Crime Rate: 0.53",
+              "Asian Race Percentage: 0.37<br />Violent Crime Rate: 0.42",
+              "Asian Race Percentage: 0.36<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.68",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.08",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.50",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.39",
+              "Asian Race Percentage: 0.76<br />Violent Crime Rate: 0.83",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.34",
+              "Asian Race Percentage: 0.17<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.40",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 0.94<br />Violent Crime Rate: 0.23",
+              "Asian Race Percentage: 0.27<br />Violent Crime Rate: 0.35",
+              "Asian Race Percentage: 0.16<br />Violent Crime Rate: 0.07",
+              "Asian Race Percentage: 0.89<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.40<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 0.28<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.72<br />Violent Crime Rate: 0.33",
+              "Asian Race Percentage: 0.37<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.40<br />Violent Crime Rate: 0.01",
+              "Asian Race Percentage: 0.54<br />Violent Crime Rate: 0.21",
+              "Asian Race Percentage: 0.12<br />Violent Crime Rate: 0.90",
+              "Asian Race Percentage: 0.74<br />Violent Crime Rate: 0.82",
+              "Asian Race Percentage: 0.30<br />Violent Crime Rate: 0.23",
+              "Asian Race Percentage: 0.47<br />Violent Crime Rate: 0.28",
+              "Asian Race Percentage: 0.18<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.26<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 0.37<br />Violent Crime Rate: 0.08",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.61",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.62",
+              "Asian Race Percentage: 0.17<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 0.47<br />Violent Crime Rate: 0.27",
+              "Asian Race Percentage: 0.08<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.92<br />Violent Crime Rate: 0.07",
+              "Asian Race Percentage: 0.38<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 0.74<br />Violent Crime Rate: 0.41",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 0.17<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 0.23<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 0.22<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 0.55<br />Violent Crime Rate: 0.30",
+              "Asian Race Percentage: 0.73<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.23<br />Violent Crime Rate: 0.50",
+              "Asian Race Percentage: 0.87<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 0.40<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.54<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.25<br />Violent Crime Rate: 0.33",
+              "Asian Race Percentage: 0.36<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 0.75<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.55<br />Violent Crime Rate: 0.03",
+              "Asian Race Percentage: 0.14<br />Violent Crime Rate: 0.42",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.38",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.27",
+              "Asian Race Percentage: 0.77<br />Violent Crime Rate: 0.06",
+              "Asian Race Percentage: 0.35<br />Violent Crime Rate: 0.81",
+              "Asian Race Percentage: 0.48<br />Violent Crime Rate: 0.69",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.33<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.93<br />Violent Crime Rate: 0.53",
+              "Asian Race Percentage: 0.28<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.33",
+              "Asian Race Percentage: 0.13<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.75<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.29<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.18",
+              "Asian Race Percentage: 0.27<br />Violent Crime Rate: 0.49",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.28",
+              "Asian Race Percentage: 0.91<br />Violent Crime Rate: 0.67",
+              "Asian Race Percentage: 0.07<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.76<br />Violent Crime Rate: 0.48",
+              "Asian Race Percentage: 0.50<br />Violent Crime Rate: 0.53",
+              "Asian Race Percentage: 0.83<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 0.27<br />Violent Crime Rate: 0.30",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.75",
+              "Asian Race Percentage: 0.39<br />Violent Crime Rate: 0.30",
+              "Asian Race Percentage: 0.37<br />Violent Crime Rate: 0.32",
+              "Asian Race Percentage: 0.72<br />Violent Crime Rate: 0.48",
+              "Asian Race Percentage: 0.39<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 0.25<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.64<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 0.29<br />Violent Crime Rate: 0.13",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.14<br />Violent Crime Rate: 0.32",
+              "Asian Race Percentage: 0.32<br />Violent Crime Rate: 0.63",
+              "Asian Race Percentage: 0.25<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.67",
+              "Asian Race Percentage: 0.16<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.22<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.74<br />Violent Crime Rate: 0.38",
+              "Asian Race Percentage: 0.49<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 0.23<br />Violent Crime Rate: 0.18",
+              "Asian Race Percentage: 0.25<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.05",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.38",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 0.24<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.62<br />Violent Crime Rate: 0.06",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.67<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.84<br />Violent Crime Rate: 0.04",
+              "Asian Race Percentage: 0.48<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.22<br />Violent Crime Rate: 0.40",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.33<br />Violent Crime Rate: 0.19",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 0.60<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 0.07<br />Violent Crime Rate: 0.41",
+              "Asian Race Percentage: 0.23<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.10<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.60",
+              "Asian Race Percentage: 0.56<br />Violent Crime Rate: 0.38",
+              "Asian Race Percentage: 0.09<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.37<br />Violent Crime Rate: 0.30",
+              "Asian Race Percentage: 0.91<br />Violent Crime Rate: 1.00",
+              "Asian Race Percentage: 0.07<br />Violent Crime Rate: 0.38",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.66",
+              "Asian Race Percentage: 0.22<br />Violent Crime Rate: 0.51",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.12",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.06",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.91<br />Violent Crime Rate: 0.17",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 0.09<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.10<br />Violent Crime Rate: 0.51",
+              "Asian Race Percentage: 0.33<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.09<br />Violent Crime Rate: 0.31",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.27",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.31",
+              "Asian Race Percentage: 0.43<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.12",
+              "Asian Race Percentage: 0.28<br />Violent Crime Rate: 0.55",
+              "Asian Race Percentage: 0.44<br />Violent Crime Rate: 0.21",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.03",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.57",
+              "Asian Race Percentage: 0.53<br />Violent Crime Rate: 0.41",
+              "Asian Race Percentage: 0.85<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 0.03<br />Violent Crime Rate: 0.32",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.50<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.65",
+              "Asian Race Percentage: 0.52<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 0.09<br />Violent Crime Rate: 0.47",
+              "Asian Race Percentage: 0.04<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.44<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 0.22<br />Violent Crime Rate: 0.57",
+              "Asian Race Percentage: 0.23<br />Violent Crime Rate: 0.12",
+              "Asian Race Percentage: 0.66<br />Violent Crime Rate: 0.39",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.52",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.33",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.70",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.54",
+              "Asian Race Percentage: 0.07<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.28",
+              "Asian Race Percentage: 0.56<br />Violent Crime Rate: 0.53",
+              "Asian Race Percentage: 0.77<br />Violent Crime Rate: 0.59",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.52",
+              "Asian Race Percentage: 0.35<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.08<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.59<br />Violent Crime Rate: 0.97",
+              "Asian Race Percentage: 0.82<br />Violent Crime Rate: 0.18",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.30<br />Violent Crime Rate: 0.30",
+              "Asian Race Percentage: 0.24<br />Violent Crime Rate: 0.48",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.20",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 0.44<br />Violent Crime Rate: 0.11",
+              "Asian Race Percentage: 0.45<br />Violent Crime Rate: 0.37",
+              "Asian Race Percentage: 0.27<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.08",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 0.14<br />Violent Crime Rate: 0.21",
+              "Asian Race Percentage: 0.29<br />Violent Crime Rate: 0.40",
+              "Asian Race Percentage: 0.39<br />Violent Crime Rate: 0.68",
+              "Asian Race Percentage: 0.27<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 0.31<br />Violent Crime Rate: 0.24",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 0.29<br />Violent Crime Rate: 0.49",
+              "Asian Race Percentage: 0.75<br />Violent Crime Rate: 0.36",
+              "Asian Race Percentage: 0.53<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.39<br />Violent Crime Rate: 0.32",
+              "Asian Race Percentage: 0.72<br />Violent Crime Rate: 0.54",
+              "Asian Race Percentage: 0.62<br />Violent Crime Rate: 0.70",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.84",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.31",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.21",
+              "Asian Race Percentage: 0.48<br />Violent Crime Rate: 0.34",
+              "Asian Race Percentage: 0.13<br />Violent Crime Rate: 0.25",
+              "Asian Race Percentage: 0.33<br />Violent Crime Rate: 0.45",
+              "Asian Race Percentage: 0.32<br />Violent Crime Rate: 0.68",
+              "Asian Race Percentage: 0.19<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 0.34<br />Violent Crime Rate: 0.62",
+              "Asian Race Percentage: 0.05<br />Violent Crime Rate: 0.29",
+              "Asian Race Percentage: 0.11<br />Violent Crime Rate: 0.18",
+              "Asian Race Percentage: 0.58<br />Violent Crime Rate: 0.16",
+              "Asian Race Percentage: 0.26<br />Violent Crime Rate: 0.10",
+              "Asian Race Percentage: 0.42<br />Violent Crime Rate: 0.02",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.31",
+              "Asian Race Percentage: 0.41<br />Violent Crime Rate: 0.51",
+              "Asian Race Percentage: 0.06<br />Violent Crime Rate: 0.15",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.27",
+              "Asian Race Percentage: 0.21<br />Violent Crime Rate: 0.08",
+              "Asian Race Percentage: 0.53<br />Violent Crime Rate: 0.22",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.26",
+              "Asian Race Percentage: 0.51<br />Violent Crime Rate: 0.27",
+              "Asian Race Percentage: 0.20<br />Violent Crime Rate: 0.55",
+              "Asian Race Percentage: 0.83<br />Violent Crime Rate: 0.67",
+              "Asian Race Percentage: 0.34<br />Violent Crime Rate: 0.17",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.14",
+              "Asian Race Percentage: 1.00<br />Violent Crime Rate: 0.68",
+              "Asian Race Percentage: 0.15<br />Violent Crime Rate: 0.86",
+              "Asian Race Percentage: 0.36<br />Violent Crime Rate: 0.03"
             ],
-            "colorscale": [
-              [
-                "0",
-                "#0000FF"
-              ],
-              [
-                "0.05",
-                "#502BFF"
-              ],
-              [
-                "0.15",
-                "#8A5DFF"
-              ],
-              [
-                "0.2",
-                "#A074FF"
-              ],
-              [
-                "0.25",
-                "#B38BFF"
-              ],
-              [
-                "0.3",
-                "#C4A2FF"
-              ],
-              [
-                "0.35",
-                "#D4B9FF"
-              ],
-              [
-                "0.4",
-                "#E3D0FF"
-              ],
-              [
-                "0.45",
-                "#F2E7FF"
-              ],
-              [
-                "0.5",
-                "#FFFFFF"
-              ],
-              [
-                "0.55",
-                "#FFECE5"
-              ],
-              [
-                "0.6",
-                "#FFD9CB"
-              ],
-              [
-                "0.65",
-                "#FFC6B2"
-              ],
-              [
-                "0.7",
-                "#FFB299"
-              ],
-              [
-                "0.75",
-                "#FF9E81"
-              ],
-              [
-                "0.8",
-                "#FF8969"
-              ],
-              [
-                "0.85",
-                "#FF7352"
-              ],
-              [
-                "0.95",
-                "#FF3E22"
-              ],
-              [
-                "1",
-                "#FF0000"
-              ]
-            ],
-            "type": "heatmap",
-            "showscale": false,
-            "autocolorscale": false,
+            "type": "scatter",
+            "mode": "markers",
+            "marker": {
+              "autocolorscale": false,
+              "color": "rgba(255,255,255,1)",
+              "opacity": 0.5,
+              "size": 5.66929133858268,
+              "symbol": "circle",
+              "line": {
+                "width": 1.88976377952756,
+                "color": "rgba(255,255,255,1)"
+              }
+            },
+            "hoveron": "points",
             "showlegend": false,
             "xaxis": "x",
             "yaxis": "y",
             "hoverinfo": "text",
-            "mode": "",
             "frame": null
           },
           {
-            "x": 1,
-            "y": 1,
-            "name": "99_cac7cf57e92b83818fdb183b9a7808a7",
+            "x": [
+              0.03,
+              0.0422784810126582,
+              0.0545569620253165,
+              0.0668354430379747,
+              0.0791139240506329,
+              0.0913924050632911,
+              0.103670886075949,
+              0.115949367088608,
+              0.128227848101266,
+              0.140506329113924,
+              0.152784810126582,
+              0.165063291139241,
+              0.177341772151899,
+              0.189620253164557,
+              0.201898734177215,
+              0.214177215189873,
+              0.226455696202532,
+              0.23873417721519,
+              0.251012658227848,
+              0.263291139240506,
+              0.275569620253165,
+              0.287848101265823,
+              0.300126582278481,
+              0.312405063291139,
+              0.324683544303797,
+              0.336962025316456,
+              0.349240506329114,
+              0.361518987341772,
+              0.37379746835443,
+              0.386075949367089,
+              0.398354430379747,
+              0.410632911392405,
+              0.422911392405063,
+              0.435189873417722,
+              0.44746835443038,
+              0.459746835443038,
+              0.472025316455696,
+              0.484303797468354,
+              0.496582278481013,
+              0.508860759493671,
+              0.521139240506329,
+              0.533417721518987,
+              0.545696202531646,
+              0.557974683544304,
+              0.570253164556962,
+              0.58253164556962,
+              0.594810126582278,
+              0.607088607594937,
+              0.619367088607595,
+              0.631645569620253,
+              0.643924050632911,
+              0.65620253164557,
+              0.668481012658228,
+              0.680759493670886,
+              0.693037974683544,
+              0.705316455696203,
+              0.717594936708861,
+              0.729873417721519,
+              0.742151898734177,
+              0.754430379746835,
+              0.766708860759494,
+              0.778987341772152,
+              0.79126582278481,
+              0.803544303797468,
+              0.815822784810127,
+              0.828101265822785,
+              0.840379746835443,
+              0.852658227848101,
+              0.864936708860759,
+              0.877215189873418,
+              0.889493670886076,
+              0.901772151898734,
+              0.914050632911392,
+              0.926329113924051,
+              0.938607594936709,
+              0.950886075949367,
+              0.963164556962025,
+              0.975443037974684,
+              0.987721518987342,
+              1
+            ],
+            "y": [
+              0.343867184818016,
+              0.343505245339708,
+              0.343143305861401,
+              0.342781366383093,
+              0.342419426904785,
+              0.342057487426477,
+              0.34169554794817,
+              0.341333608469862,
+              0.340971668991554,
+              0.340609729513246,
+              0.340247790034939,
+              0.339885850556631,
+              0.339523911078323,
+              0.339161971600015,
+              0.338800032121708,
+              0.3384380926434,
+              0.338076153165092,
+              0.337714213686784,
+              0.337352274208477,
+              0.336990334730169,
+              0.336628395251861,
+              0.336266455773553,
+              0.335904516295246,
+              0.335542576816938,
+              0.33518063733863,
+              0.334818697860322,
+              0.334456758382015,
+              0.334094818903707,
+              0.333732879425399,
+              0.333370939947091,
+              0.333009000468784,
+              0.332647060990476,
+              0.332285121512168,
+              0.331923182033861,
+              0.331561242555553,
+              0.331199303077245,
+              0.330837363598937,
+              0.33047542412063,
+              0.330113484642322,
+              0.329751545164014,
+              0.329389605685706,
+              0.329027666207399,
+              0.328665726729091,
+              0.328303787250783,
+              0.327941847772475,
+              0.327579908294168,
+              0.32721796881586,
+              0.326856029337552,
+              0.326494089859244,
+              0.326132150380937,
+              0.325770210902629,
+              0.325408271424321,
+              0.325046331946013,
+              0.324684392467706,
+              0.324322452989398,
+              0.32396051351109,
+              0.323598574032782,
+              0.323236634554475,
+              0.322874695076167,
+              0.322512755597859,
+              0.322150816119551,
+              0.321788876641244,
+              0.321426937162936,
+              0.321064997684628,
+              0.320703058206321,
+              0.320341118728013,
+              0.319979179249705,
+              0.319617239771397,
+              0.31925530029309,
+              0.318893360814782,
+              0.318531421336474,
+              0.318169481858166,
+              0.317807542379859,
+              0.317445602901551,
+              0.317083663423243,
+              0.316721723944935,
+              0.316359784466628,
+              0.31599784498832,
+              0.315635905510012,
+              0.315273966031704
+            ],
+            "text": [
+              "Asian Race Percentage: 0.03000000<br />Violent Crime Rate: 0.3438672",
+              "Asian Race Percentage: 0.04227848<br />Violent Crime Rate: 0.3435052",
+              "Asian Race Percentage: 0.05455696<br />Violent Crime Rate: 0.3431433",
+              "Asian Race Percentage: 0.06683544<br />Violent Crime Rate: 0.3427814",
+              "Asian Race Percentage: 0.07911392<br />Violent Crime Rate: 0.3424194",
+              "Asian Race Percentage: 0.09139241<br />Violent Crime Rate: 0.3420575",
+              "Asian Race Percentage: 0.10367089<br />Violent Crime Rate: 0.3416955",
+              "Asian Race Percentage: 0.11594937<br />Violent Crime Rate: 0.3413336",
+              "Asian Race Percentage: 0.12822785<br />Violent Crime Rate: 0.3409717",
+              "Asian Race Percentage: 0.14050633<br />Violent Crime Rate: 0.3406097",
+              "Asian Race Percentage: 0.15278481<br />Violent Crime Rate: 0.3402478",
+              "Asian Race Percentage: 0.16506329<br />Violent Crime Rate: 0.3398859",
+              "Asian Race Percentage: 0.17734177<br />Violent Crime Rate: 0.3395239",
+              "Asian Race Percentage: 0.18962025<br />Violent Crime Rate: 0.3391620",
+              "Asian Race Percentage: 0.20189873<br />Violent Crime Rate: 0.3388000",
+              "Asian Race Percentage: 0.21417722<br />Violent Crime Rate: 0.3384381",
+              "Asian Race Percentage: 0.22645570<br />Violent Crime Rate: 0.3380762",
+              "Asian Race Percentage: 0.23873418<br />Violent Crime Rate: 0.3377142",
+              "Asian Race Percentage: 0.25101266<br />Violent Crime Rate: 0.3373523",
+              "Asian Race Percentage: 0.26329114<br />Violent Crime Rate: 0.3369903",
+              "Asian Race Percentage: 0.27556962<br />Violent Crime Rate: 0.3366284",
+              "Asian Race Percentage: 0.28784810<br />Violent Crime Rate: 0.3362665",
+              "Asian Race Percentage: 0.30012658<br />Violent Crime Rate: 0.3359045",
+              "Asian Race Percentage: 0.31240506<br />Violent Crime Rate: 0.3355426",
+              "Asian Race Percentage: 0.32468354<br />Violent Crime Rate: 0.3351806",
+              "Asian Race Percentage: 0.33696203<br />Violent Crime Rate: 0.3348187",
+              "Asian Race Percentage: 0.34924051<br />Violent Crime Rate: 0.3344568",
+              "Asian Race Percentage: 0.36151899<br />Violent Crime Rate: 0.3340948",
+              "Asian Race Percentage: 0.37379747<br />Violent Crime Rate: 0.3337329",
+              "Asian Race Percentage: 0.38607595<br />Violent Crime Rate: 0.3333709",
+              "Asian Race Percentage: 0.39835443<br />Violent Crime Rate: 0.3330090",
+              "Asian Race Percentage: 0.41063291<br />Violent Crime Rate: 0.3326471",
+              "Asian Race Percentage: 0.42291139<br />Violent Crime Rate: 0.3322851",
+              "Asian Race Percentage: 0.43518987<br />Violent Crime Rate: 0.3319232",
+              "Asian Race Percentage: 0.44746835<br />Violent Crime Rate: 0.3315612",
+              "Asian Race Percentage: 0.45974684<br />Violent Crime Rate: 0.3311993",
+              "Asian Race Percentage: 0.47202532<br />Violent Crime Rate: 0.3308374",
+              "Asian Race Percentage: 0.48430380<br />Violent Crime Rate: 0.3304754",
+              "Asian Race Percentage: 0.49658228<br />Violent Crime Rate: 0.3301135",
+              "Asian Race Percentage: 0.50886076<br />Violent Crime Rate: 0.3297515",
+              "Asian Race Percentage: 0.52113924<br />Violent Crime Rate: 0.3293896",
+              "Asian Race Percentage: 0.53341772<br />Violent Crime Rate: 0.3290277",
+              "Asian Race Percentage: 0.54569620<br />Violent Crime Rate: 0.3286657",
+              "Asian Race Percentage: 0.55797468<br />Violent Crime Rate: 0.3283038",
+              "Asian Race Percentage: 0.57025316<br />Violent Crime Rate: 0.3279418",
+              "Asian Race Percentage: 0.58253165<br />Violent Crime Rate: 0.3275799",
+              "Asian Race Percentage: 0.59481013<br />Violent Crime Rate: 0.3272180",
+              "Asian Race Percentage: 0.60708861<br />Violent Crime Rate: 0.3268560",
+              "Asian Race Percentage: 0.61936709<br />Violent Crime Rate: 0.3264941",
+              "Asian Race Percentage: 0.63164557<br />Violent Crime Rate: 0.3261322",
+              "Asian Race Percentage: 0.64392405<br />Violent Crime Rate: 0.3257702",
+              "Asian Race Percentage: 0.65620253<br />Violent Crime Rate: 0.3254083",
+              "Asian Race Percentage: 0.66848101<br />Violent Crime Rate: 0.3250463",
+              "Asian Race Percentage: 0.68075949<br />Violent Crime Rate: 0.3246844",
+              "Asian Race Percentage: 0.69303797<br />Violent Crime Rate: 0.3243225",
+              "Asian Race Percentage: 0.70531646<br />Violent Crime Rate: 0.3239605",
+              "Asian Race Percentage: 0.71759494<br />Violent Crime Rate: 0.3235986",
+              "Asian Race Percentage: 0.72987342<br />Violent Crime Rate: 0.3232366",
+              "Asian Race Percentage: 0.74215190<br />Violent Crime Rate: 0.3228747",
+              "Asian Race Percentage: 0.75443038<br />Violent Crime Rate: 0.3225128",
+              "Asian Race Percentage: 0.76670886<br />Violent Crime Rate: 0.3221508",
+              "Asian Race Percentage: 0.77898734<br />Violent Crime Rate: 0.3217889",
+              "Asian Race Percentage: 0.79126582<br />Violent Crime Rate: 0.3214269",
+              "Asian Race Percentage: 0.80354430<br />Violent Crime Rate: 0.3210650",
+              "Asian Race Percentage: 0.81582278<br />Violent Crime Rate: 0.3207031",
+              "Asian Race Percentage: 0.82810127<br />Violent Crime Rate: 0.3203411",
+              "Asian Race Percentage: 0.84037975<br />Violent Crime Rate: 0.3199792",
+              "Asian Race Percentage: 0.85265823<br />Violent Crime Rate: 0.3196172",
+              "Asian Race Percentage: 0.86493671<br />Violent Crime Rate: 0.3192553",
+              "Asian Race Percentage: 0.87721519<br />Violent Crime Rate: 0.3188934",
+              "Asian Race Percentage: 0.88949367<br />Violent Crime Rate: 0.3185314",
+              "Asian Race Percentage: 0.90177215<br />Violent Crime Rate: 0.3181695",
+              "Asian Race Percentage: 0.91405063<br />Violent Crime Rate: 0.3178075",
+              "Asian Race Percentage: 0.92632911<br />Violent Crime Rate: 0.3174456",
+              "Asian Race Percentage: 0.93860759<br />Violent Crime Rate: 0.3170837",
+              "Asian Race Percentage: 0.95088608<br />Violent Crime Rate: 0.3167217",
+              "Asian Race Percentage: 0.96316456<br />Violent Crime Rate: 0.3163598",
+              "Asian Race Percentage: 0.97544304<br />Violent Crime Rate: 0.3159978",
+              "Asian Race Percentage: 0.98772152<br />Violent Crime Rate: 0.3156359",
+              "Asian Race Percentage: 1.00000000<br />Violent Crime Rate: 0.3152740"
+            ],
             "type": "scatter",
-            "mode": "markers",
-            "opacity": 0,
-            "hoverinfo": "skip",
-            "showlegend": false,
-            "marker": {
-              "color": [
-                0,
-                1
-              ],
-              "colorscale": [
-                [
-                  "0",
-                  "#0000FF"
-                ],
-                [
-                  "0.00334448160535117",
-                  "#1004FF"
-                ],
-                [
-                  "0.00668896321070234",
-                  "#1A09FF"
-                ],
-                [
-                  "0.0100334448160535",
-                  "#210DFF"
-                ],
-                [
-                  "0.0133779264214047",
-                  "#2710FF"
-                ],
-                [
-                  "0.0167224080267558",
-                  "#2D14FF"
-                ],
-                [
-                  "0.020066889632107",
-                  "#3117FF"
-                ],
-                [
-                  "0.0234113712374582",
-                  "#3619FF"
-                ],
-                [
-                  "0.0267558528428093",
-                  "#3A1CFF"
-                ],
-                [
-                  "0.0301003344481605",
-                  "#3D1EFF"
-                ],
-                [
-                  "0.0334448160535117",
-                  "#4121FF"
-                ],
-                [
-                  "0.0367892976588629",
-                  "#4423FF"
-                ],
-                [
-                  "0.040133779264214",
-                  "#4725FF"
-                ],
-                [
-                  "0.0434782608695652",
-                  "#4A27FF"
-                ],
-                [
-                  "0.0468227424749164",
-                  "#4D29FF"
-                ],
-                [
-                  "0.0501672240802676",
-                  "#502BFF"
-                ],
-                [
-                  "0.0535117056856187",
-                  "#522DFF"
-                ],
-                [
-                  "0.0568561872909699",
-                  "#552FFF"
-                ],
-                [
-                  "0.0602006688963211",
-                  "#5731FF"
-                ],
-                [
-                  "0.0635451505016723",
-                  "#5A33FF"
-                ],
-                [
-                  "0.0668896321070234",
-                  "#5C34FF"
-                ],
-                [
-                  "0.0702341137123746",
-                  "#5F36FF"
-                ],
-                [
-                  "0.0735785953177258",
-                  "#6138FF"
-                ],
-                [
-                  "0.0769230769230769",
-                  "#633AFF"
-                ],
-                [
-                  "0.0802675585284281",
-                  "#653BFF"
-                ],
-                [
-                  "0.0836120401337793",
-                  "#673DFF"
-                ],
-                [
-                  "0.0869565217391304",
-                  "#693FFF"
-                ],
-                [
-                  "0.0903010033444816",
-                  "#6B41FF"
-                ],
-                [
-                  "0.0936454849498328",
-                  "#6D42FF"
-                ],
-                [
-                  "0.0969899665551839",
-                  "#6F44FF"
-                ],
-                [
-                  "0.100334448160535",
-                  "#7146FF"
-                ],
-                [
-                  "0.103678929765886",
-                  "#7347FF"
-                ],
-                [
-                  "0.107023411371237",
-                  "#7549FF"
-                ],
-                [
-                  "0.110367892976589",
-                  "#774AFF"
-                ],
-                [
-                  "0.11371237458194",
-                  "#784CFF"
-                ],
-                [
-                  "0.117056856187291",
-                  "#7A4EFF"
-                ],
-                [
-                  "0.120401337792642",
-                  "#7C4FFF"
-                ],
-                [
-                  "0.123745819397993",
-                  "#7E51FF"
-                ],
-                [
-                  "0.127090301003345",
-                  "#7F53FF"
-                ],
-                [
-                  "0.130434782608696",
-                  "#8154FF"
-                ],
-                [
-                  "0.133779264214047",
-                  "#8356FF"
-                ],
-                [
-                  "0.137123745819398",
-                  "#8457FF"
-                ],
-                [
-                  "0.140468227424749",
-                  "#8659FF"
-                ],
-                [
-                  "0.1438127090301",
-                  "#875AFF"
-                ],
-                [
-                  "0.147157190635452",
-                  "#895CFF"
-                ],
-                [
-                  "0.150501672240803",
-                  "#8A5EFF"
-                ],
-                [
-                  "0.153846153846154",
-                  "#8C5FFF"
-                ],
-                [
-                  "0.157190635451505",
-                  "#8D61FF"
-                ],
-                [
-                  "0.160535117056856",
-                  "#8F62FF"
-                ],
-                [
-                  "0.163879598662207",
-                  "#9064FF"
-                ],
-                [
-                  "0.167224080267559",
-                  "#9265FF"
-                ],
-                [
-                  "0.17056856187291",
-                  "#9367FF"
-                ],
-                [
-                  "0.173913043478261",
-                  "#9568FF"
-                ],
-                [
-                  "0.177257525083612",
-                  "#966AFF"
-                ],
-                [
-                  "0.180602006688963",
-                  "#986BFF"
-                ],
-                [
-                  "0.183946488294314",
-                  "#996DFF"
-                ],
-                [
-                  "0.187290969899666",
-                  "#9B6FFF"
-                ],
-                [
-                  "0.190635451505017",
-                  "#9C70FF"
-                ],
-                [
-                  "0.193979933110368",
-                  "#9D72FF"
-                ],
-                [
-                  "0.197324414715719",
-                  "#9F73FF"
-                ],
-                [
-                  "0.20066889632107",
-                  "#A075FF"
-                ],
-                [
-                  "0.204013377926421",
-                  "#A176FF"
-                ],
-                [
-                  "0.207357859531773",
-                  "#A378FF"
-                ],
-                [
-                  "0.210702341137124",
-                  "#A479FF"
-                ],
-                [
-                  "0.214046822742475",
-                  "#A57BFF"
-                ],
-                [
-                  "0.217391304347826",
-                  "#A77CFF"
-                ],
-                [
-                  "0.220735785953177",
-                  "#A87EFF"
-                ],
-                [
-                  "0.224080267558528",
-                  "#A97FFF"
-                ],
-                [
-                  "0.22742474916388",
-                  "#AA81FF"
-                ],
-                [
-                  "0.230769230769231",
-                  "#AC82FF"
-                ],
-                [
-                  "0.234113712374582",
-                  "#AD84FF"
-                ],
-                [
-                  "0.237458193979933",
-                  "#AE85FF"
-                ],
-                [
-                  "0.240802675585284",
-                  "#AF87FF"
-                ],
-                [
-                  "0.244147157190635",
-                  "#B189FF"
-                ],
-                [
-                  "0.247491638795987",
-                  "#B28AFF"
-                ],
-                [
-                  "0.250836120401338",
-                  "#B38CFF"
-                ],
-                [
-                  "0.254180602006689",
-                  "#B48DFF"
-                ],
-                [
-                  "0.25752508361204",
-                  "#B68FFF"
-                ],
-                [
-                  "0.260869565217391",
-                  "#B790FF"
-                ],
-                [
-                  "0.264214046822742",
-                  "#B892FF"
-                ],
-                [
-                  "0.267558528428094",
-                  "#B993FF"
-                ],
-                [
-                  "0.270903010033445",
-                  "#BA95FF"
-                ],
-                [
-                  "0.274247491638796",
-                  "#BB96FF"
-                ],
-                [
-                  "0.277591973244147",
-                  "#BD98FF"
-                ],
-                [
-                  "0.280936454849498",
-                  "#BE99FF"
-                ],
-                [
-                  "0.284280936454849",
-                  "#BF9BFF"
-                ],
-                [
-                  "0.287625418060201",
-                  "#C09CFF"
-                ],
-                [
-                  "0.290969899665552",
-                  "#C19EFF"
-                ],
-                [
-                  "0.294314381270903",
-                  "#C29FFF"
-                ],
-                [
-                  "0.297658862876254",
-                  "#C3A1FF"
-                ],
-                [
-                  "0.301003344481605",
-                  "#C5A2FF"
-                ],
-                [
-                  "0.304347826086957",
-                  "#C6A4FF"
-                ],
-                [
-                  "0.307692307692308",
-                  "#C7A6FF"
-                ],
-                [
-                  "0.311036789297659",
-                  "#C8A7FF"
-                ],
-                [
-                  "0.31438127090301",
-                  "#C9A9FF"
-                ],
-                [
-                  "0.317725752508361",
-                  "#CAAAFF"
-                ],
-                [
-                  "0.321070234113712",
-                  "#CBACFF"
-                ],
-                [
-                  "0.324414715719064",
-                  "#CCADFF"
-                ],
-                [
-                  "0.327759197324415",
-                  "#CDAFFF"
-                ],
-                [
-                  "0.331103678929766",
-                  "#CEB0FF"
-                ],
-                [
-                  "0.334448160535117",
-                  "#CFB2FF"
-                ],
-                [
-                  "0.337792642140468",
-                  "#D1B3FF"
-                ],
-                [
-                  "0.341137123745819",
-                  "#D2B5FF"
-                ],
-                [
-                  "0.344481605351171",
-                  "#D3B6FF"
-                ],
-                [
-                  "0.347826086956522",
-                  "#D4B8FF"
-                ],
-                [
-                  "0.351170568561873",
-                  "#D5B9FF"
-                ],
-                [
-                  "0.354515050167224",
-                  "#D6BBFF"
-                ],
-                [
-                  "0.357859531772575",
-                  "#D7BDFF"
-                ],
-                [
-                  "0.361204013377926",
-                  "#D8BEFF"
-                ],
-                [
-                  "0.364548494983278",
-                  "#D9C0FF"
-                ],
-                [
-                  "0.367892976588629",
-                  "#DAC1FF"
-                ],
-                [
-                  "0.37123745819398",
-                  "#DBC3FF"
-                ],
-                [
-                  "0.374581939799331",
-                  "#DCC4FF"
-                ],
-                [
-                  "0.377926421404682",
-                  "#DDC6FF"
-                ],
-                [
-                  "0.381270903010033",
-                  "#DEC7FF"
-                ],
-                [
-                  "0.384615384615385",
-                  "#DFC9FF"
-                ],
-                [
-                  "0.387959866220736",
-                  "#E0CAFF"
-                ],
-                [
-                  "0.391304347826087",
-                  "#E1CCFF"
-                ],
-                [
-                  "0.394648829431438",
-                  "#E2CEFF"
-                ],
-                [
-                  "0.397993311036789",
-                  "#E3CFFF"
-                ],
-                [
-                  "0.40133779264214",
-                  "#E4D1FF"
-                ],
-                [
-                  "0.404682274247492",
-                  "#E5D2FF"
-                ],
-                [
-                  "0.408026755852843",
-                  "#E6D4FF"
-                ],
-                [
-                  "0.411371237458194",
-                  "#E7D5FF"
-                ],
-                [
-                  "0.414715719063545",
-                  "#E8D7FF"
-                ],
-                [
-                  "0.418060200668896",
-                  "#E9D8FF"
-                ],
-                [
-                  "0.421404682274247",
-                  "#EADAFF"
-                ],
-                [
-                  "0.424749163879599",
-                  "#EBDCFF"
-                ],
-                [
-                  "0.42809364548495",
-                  "#EBDDFF"
-                ],
-                [
-                  "0.431438127090301",
-                  "#ECDFFF"
-                ],
-                [
-                  "0.434782608695652",
-                  "#EDE0FF"
-                ],
-                [
-                  "0.438127090301003",
-                  "#EEE2FF"
-                ],
-                [
-                  "0.441471571906354",
-                  "#EFE3FF"
-                ],
-                [
-                  "0.444816053511706",
-                  "#F0E5FF"
-                ],
-                [
-                  "0.448160535117057",
-                  "#F1E7FF"
-                ],
-                [
-                  "0.451505016722408",
-                  "#F2E8FF"
-                ],
-                [
-                  "0.454849498327759",
-                  "#F3EAFF"
-                ],
-                [
-                  "0.45819397993311",
-                  "#F4EBFF"
-                ],
-                [
-                  "0.461538461538462",
-                  "#F5EDFF"
-                ],
-                [
-                  "0.464882943143813",
-                  "#F6EEFF"
-                ],
-                [
-                  "0.468227424749164",
-                  "#F7F0FF"
-                ],
-                [
-                  "0.471571906354515",
-                  "#F7F2FF"
-                ],
-                [
-                  "0.474916387959866",
-                  "#F8F3FF"
-                ],
-                [
-                  "0.478260869565217",
-                  "#F9F5FF"
-                ],
-                [
-                  "0.481605351170569",
-                  "#FAF6FF"
-                ],
-                [
-                  "0.48494983277592",
-                  "#FBF8FF"
-                ],
-                [
-                  "0.488294314381271",
-                  "#FCF9FF"
-                ],
-                [
-                  "0.491638795986622",
-                  "#FDFBFF"
-                ],
-                [
-                  "0.494983277591973",
-                  "#FEFDFF"
-                ],
-                [
-                  "0.498327759197324",
-                  "#FFFEFF"
-                ],
-                [
-                  "0.501672240802676",
-                  "#FFFEFE"
-                ],
-                [
-                  "0.505016722408027",
-                  "#FFFDFC"
-                ],
-                [
-                  "0.508361204013378",
-                  "#FFFCFB"
-                ],
-                [
-                  "0.511705685618729",
-                  "#FFFBF9"
-                ],
-                [
-                  "0.51505016722408",
-                  "#FFF9F7"
-                ],
-                [
-                  "0.518394648829431",
-                  "#FFF8F5"
-                ],
-                [
-                  "0.521739130434783",
-                  "#FFF7F4"
-                ],
-                [
-                  "0.525083612040134",
-                  "#FFF5F2"
-                ],
-                [
-                  "0.528428093645485",
-                  "#FFF4F0"
-                ],
-                [
-                  "0.531772575250836",
-                  "#FFF3EE"
-                ],
-                [
-                  "0.535117056856187",
-                  "#FFF2ED"
-                ],
-                [
-                  "0.538461538461538",
-                  "#FFF0EB"
-                ],
-                [
-                  "0.54180602006689",
-                  "#FFEFE9"
-                ],
-                [
-                  "0.545150501672241",
-                  "#FFEEE7"
-                ],
-                [
-                  "0.548494983277592",
-                  "#FFEDE6"
-                ],
-                [
-                  "0.551839464882943",
-                  "#FFEBE4"
-                ],
-                [
-                  "0.555183946488294",
-                  "#FFEAE2"
-                ],
-                [
-                  "0.558528428093645",
-                  "#FFE9E1"
-                ],
-                [
-                  "0.561872909698997",
-                  "#FFE7DF"
-                ],
-                [
-                  "0.565217391304348",
-                  "#FFE6DD"
-                ],
-                [
-                  "0.568561872909699",
-                  "#FFE5DB"
-                ],
-                [
-                  "0.57190635451505",
-                  "#FFE4DA"
-                ],
-                [
-                  "0.575250836120401",
-                  "#FFE2D8"
-                ],
-                [
-                  "0.578595317725752",
-                  "#FFE1D6"
-                ],
-                [
-                  "0.581939799331104",
-                  "#FFE0D5"
-                ],
-                [
-                  "0.585284280936455",
-                  "#FFDED3"
-                ],
-                [
-                  "0.588628762541806",
-                  "#FFDDD1"
-                ],
-                [
-                  "0.591973244147157",
-                  "#FFDCCF"
-                ],
-                [
-                  "0.595317725752508",
-                  "#FFDBCE"
-                ],
-                [
-                  "0.598662207357859",
-                  "#FFD9CC"
-                ],
-                [
-                  "0.602006688963211",
-                  "#FFD8CA"
-                ],
-                [
-                  "0.605351170568562",
-                  "#FFD7C9"
-                ],
-                [
-                  "0.608695652173913",
-                  "#FFD5C7"
-                ],
-                [
-                  "0.612040133779264",
-                  "#FFD4C5"
-                ],
-                [
-                  "0.615384615384615",
-                  "#FFD3C4"
-                ],
-                [
-                  "0.618729096989967",
-                  "#FFD2C2"
-                ],
-                [
-                  "0.622073578595318",
-                  "#FFD0C0"
-                ],
-                [
-                  "0.625418060200669",
-                  "#FFCFBE"
-                ],
-                [
-                  "0.62876254180602",
-                  "#FFCEBD"
-                ],
-                [
-                  "0.632107023411371",
-                  "#FFCCBB"
-                ],
-                [
-                  "0.635451505016722",
-                  "#FFCBB9"
-                ],
-                [
-                  "0.638795986622074",
-                  "#FFCAB8"
-                ],
-                [
-                  "0.642140468227425",
-                  "#FFC9B6"
-                ],
-                [
-                  "0.645484949832776",
-                  "#FFC7B4"
-                ],
-                [
-                  "0.648829431438127",
-                  "#FFC6B3"
-                ],
-                [
-                  "0.652173913043478",
-                  "#FFC5B1"
-                ],
-                [
-                  "0.655518394648829",
-                  "#FFC3AF"
-                ],
-                [
-                  "0.658862876254181",
-                  "#FFC2AE"
-                ],
-                [
-                  "0.662207357859532",
-                  "#FFC1AC"
-                ],
-                [
-                  "0.665551839464883",
-                  "#FFBFAA"
-                ],
-                [
-                  "0.668896321070234",
-                  "#FFBEA9"
-                ],
-                [
-                  "0.672240802675585",
-                  "#FFBDA7"
-                ],
-                [
-                  "0.675585284280936",
-                  "#FFBCA5"
-                ],
-                [
-                  "0.678929765886288",
-                  "#FFBAA4"
-                ],
-                [
-                  "0.682274247491639",
-                  "#FFB9A2"
-                ],
-                [
-                  "0.68561872909699",
-                  "#FFB8A1"
-                ],
-                [
-                  "0.688963210702341",
-                  "#FFB69F"
-                ],
-                [
-                  "0.692307692307692",
-                  "#FFB59D"
-                ],
-                [
-                  "0.695652173913043",
-                  "#FFB49C"
-                ],
-                [
-                  "0.698996655518395",
-                  "#FFB29A"
-                ],
-                [
-                  "0.702341137123746",
-                  "#FFB198"
-                ],
-                [
-                  "0.705685618729097",
-                  "#FFB097"
-                ],
-                [
-                  "0.709030100334448",
-                  "#FFAE95"
-                ],
-                [
-                  "0.712374581939799",
-                  "#FFAD93"
-                ],
-                [
-                  "0.71571906354515",
-                  "#FFAC92"
-                ],
-                [
-                  "0.719063545150502",
-                  "#FFAA90"
-                ],
-                [
-                  "0.722408026755853",
-                  "#FFA98F"
-                ],
-                [
-                  "0.725752508361204",
-                  "#FFA88D"
-                ],
-                [
-                  "0.729096989966555",
-                  "#FFA68B"
-                ],
-                [
-                  "0.732441471571906",
-                  "#FFA58A"
-                ],
-                [
-                  "0.735785953177257",
-                  "#FFA488"
-                ],
-                [
-                  "0.739130434782609",
-                  "#FFA286"
-                ],
-                [
-                  "0.74247491638796",
-                  "#FFA185"
-                ],
-                [
-                  "0.745819397993311",
-                  "#FFA083"
-                ],
-                [
-                  "0.749163879598662",
-                  "#FF9E82"
-                ],
-                [
-                  "0.752508361204013",
-                  "#FF9D80"
-                ],
-                [
-                  "0.755852842809364",
-                  "#FF9C7E"
-                ],
-                [
-                  "0.759197324414716",
-                  "#FF9A7D"
-                ],
-                [
-                  "0.762541806020067",
-                  "#FF997B"
-                ],
-                [
-                  "0.765886287625418",
-                  "#FF977A"
-                ],
-                [
-                  "0.769230769230769",
-                  "#FF9678"
-                ],
-                [
-                  "0.77257525083612",
-                  "#FF9576"
-                ],
-                [
-                  "0.775919732441472",
-                  "#FF9375"
-                ],
-                [
-                  "0.779264214046823",
-                  "#FF9273"
-                ],
-                [
-                  "0.782608695652174",
-                  "#FF9172"
-                ],
-                [
-                  "0.785953177257525",
-                  "#FF8F70"
-                ],
-                [
-                  "0.789297658862876",
-                  "#FF8E6F"
-                ],
-                [
-                  "0.792642140468227",
-                  "#FF8C6D"
-                ],
-                [
-                  "0.795986622073579",
-                  "#FF8B6B"
-                ],
-                [
-                  "0.79933110367893",
-                  "#FF8A6A"
-                ],
-                [
-                  "0.802675585284281",
-                  "#FF8868"
-                ],
-                [
-                  "0.806020066889632",
-                  "#FF8767"
-                ],
-                [
-                  "0.809364548494983",
-                  "#FF8565"
-                ],
-                [
-                  "0.812709030100334",
-                  "#FF8463"
-                ],
-                [
-                  "0.816053511705686",
-                  "#FF8262"
-                ],
-                [
-                  "0.819397993311037",
-                  "#FF8160"
-                ],
-                [
-                  "0.822742474916388",
-                  "#FF7F5F"
-                ],
-                [
-                  "0.826086956521739",
-                  "#FF7E5D"
-                ],
-                [
-                  "0.82943143812709",
-                  "#FF7C5C"
-                ],
-                [
-                  "0.832775919732441",
-                  "#FF7B5A"
-                ],
-                [
-                  "0.836120401337793",
-                  "#FF7A58"
-                ],
-                [
-                  "0.839464882943144",
-                  "#FF7857"
-                ],
-                [
-                  "0.842809364548495",
-                  "#FF7755"
-                ],
-                [
-                  "0.846153846153846",
-                  "#FF7554"
-                ],
-                [
-                  "0.849498327759197",
-                  "#FF7452"
-                ],
-                [
-                  "0.852842809364548",
-                  "#FF7251"
-                ],
-                [
-                  "0.8561872909699",
-                  "#FF704F"
-                ],
-                [
-                  "0.859531772575251",
-                  "#FF6F4D"
-                ],
-                [
-                  "0.862876254180602",
-                  "#FF6D4C"
-                ],
-                [
-                  "0.866220735785953",
-                  "#FF6C4A"
-                ],
-                [
-                  "0.869565217391304",
-                  "#FF6A49"
-                ],
-                [
-                  "0.872909698996655",
-                  "#FF6947"
-                ],
-                [
-                  "0.876254180602007",
-                  "#FF6746"
-                ],
-                [
-                  "0.879598662207358",
-                  "#FF6544"
-                ],
-                [
-                  "0.882943143812709",
-                  "#FF6442"
-                ],
-                [
-                  "0.88628762541806",
-                  "#FF6241"
-                ],
-                [
-                  "0.889632107023411",
-                  "#FF603F"
-                ],
-                [
-                  "0.892976588628763",
-                  "#FF5F3E"
-                ],
-                [
-                  "0.896321070234114",
-                  "#FF5D3C"
-                ],
-                [
-                  "0.899665551839465",
-                  "#FF5B3B"
-                ],
-                [
-                  "0.903010033444816",
-                  "#FF5939"
-                ],
-                [
-                  "0.906354515050167",
-                  "#FF5837"
-                ],
-                [
-                  "0.909698996655518",
-                  "#FF5636"
-                ],
-                [
-                  "0.91304347826087",
-                  "#FF5434"
-                ],
-                [
-                  "0.916387959866221",
-                  "#FF5232"
-                ],
-                [
-                  "0.919732441471572",
-                  "#FF5031"
-                ],
-                [
-                  "0.923076923076923",
-                  "#FF4E2F"
-                ],
-                [
-                  "0.926421404682274",
-                  "#FF4D2E"
-                ],
-                [
-                  "0.929765886287625",
-                  "#FF4B2C"
-                ],
-                [
-                  "0.933110367892977",
-                  "#FF492A"
-                ],
-                [
-                  "0.936454849498328",
-                  "#FF4629"
-                ],
-                [
-                  "0.939799331103679",
-                  "#FF4427"
-                ],
-                [
-                  "0.94314381270903",
-                  "#FF4225"
-                ],
-                [
-                  "0.946488294314381",
-                  "#FF4023"
-                ],
-                [
-                  "0.949832775919732",
-                  "#FF3E22"
-                ],
-                [
-                  "0.953177257525084",
-                  "#FF3B20"
-                ],
-                [
-                  "0.956521739130435",
-                  "#FF391E"
-                ],
-                [
-                  "0.959866220735786",
-                  "#FF361C"
-                ],
-                [
-                  "0.963210702341137",
-                  "#FF341A"
-                ],
-                [
-                  "0.966555183946488",
-                  "#FF3118"
-                ],
-                [
-                  "0.969899665551839",
-                  "#FF2E16"
-                ],
-                [
-                  "0.973244147157191",
-                  "#FF2B14"
-                ],
-                [
-                  "0.976588628762542",
-                  "#FF2812"
-                ],
-                [
-                  "0.979933110367893",
-                  "#FF2410"
-                ],
-                [
-                  "0.983277591973244",
-                  "#FF210D"
-                ],
-                [
-                  "0.986622073578595",
-                  "#FF1C0B"
-                ],
-                [
-                  "0.989966555183946",
-                  "#FF1708"
-                ],
-                [
-                  "0.993311036789298",
-                  "#FF1205"
-                ],
-                [
-                  "0.996655518394649",
-                  "#FF0A02"
-                ],
-                [
-                  "1",
-                  "#FF0000"
-                ]
-              ],
-              "colorbar": {
-                "bgcolor": "rgba(255,255,255,1)",
-                "bordercolor": "transparent",
-                "borderwidth": 1.88976377952756,
-                "thickness": 23.04,
-                "title": "Corr",
-                "titlefont": {
-                  "color": "rgba(0,0,0,1)",
-                  "family": "'Righteous'",
-                  "size": 14.6118721461187
-                },
-                "tickmode": "array",
-                "ticktext": [
-                  "-1.0",
-                  "-0.5",
-                  "0.0",
-                  "0.5",
-                  "1.0"
-                ],
-                "tickvals": [
-                  0,
-                  0.25,
-                  0.5,
-                  0.75,
-                  1
-                ],
-                "tickfont": {
-                  "color": "rgba(0,0,0,1)",
-                  "family": "'Righteous'",
-                  "size": 11.689497716895
-                },
-                "ticklen": 2,
-                "len": 0.5
-              }
+            "mode": "lines",
+            "name": "fitted values",
+            "line": {
+              "width": 3.77952755905512,
+              "color": "rgba(0,188,140,1)",
+              "dash": "solid"
             },
+            "hoveron": "points",
+            "showlegend": false,
+            "xaxis": "x",
+            "yaxis": "y",
+            "hoverinfo": "text",
+            "frame": null
+          },
+          {
+            "x": [
+              0.03,
+              0.0422784810126582,
+              0.0545569620253165,
+              0.0668354430379747,
+              0.0791139240506329,
+              0.0913924050632911,
+              0.103670886075949,
+              0.115949367088608,
+              0.128227848101266,
+              0.140506329113924,
+              0.152784810126582,
+              0.165063291139241,
+              0.177341772151899,
+              0.189620253164557,
+              0.201898734177215,
+              0.214177215189873,
+              0.226455696202532,
+              0.23873417721519,
+              0.251012658227848,
+              0.263291139240506,
+              0.275569620253165,
+              0.287848101265823,
+              0.300126582278481,
+              0.312405063291139,
+              0.324683544303797,
+              0.336962025316456,
+              0.349240506329114,
+              0.361518987341772,
+              0.37379746835443,
+              0.386075949367089,
+              0.398354430379747,
+              0.410632911392405,
+              0.422911392405063,
+              0.435189873417722,
+              0.44746835443038,
+              0.459746835443038,
+              0.472025316455696,
+              0.484303797468354,
+              0.496582278481013,
+              0.508860759493671,
+              0.521139240506329,
+              0.533417721518987,
+              0.545696202531646,
+              0.557974683544304,
+              0.570253164556962,
+              0.58253164556962,
+              0.594810126582278,
+              0.607088607594937,
+              0.619367088607595,
+              0.631645569620253,
+              0.643924050632911,
+              0.65620253164557,
+              0.668481012658228,
+              0.680759493670886,
+              0.693037974683544,
+              0.705316455696203,
+              0.717594936708861,
+              0.729873417721519,
+              0.742151898734177,
+              0.754430379746835,
+              0.766708860759494,
+              0.778987341772152,
+              0.79126582278481,
+              0.803544303797468,
+              0.815822784810127,
+              0.828101265822785,
+              0.840379746835443,
+              0.852658227848101,
+              0.864936708860759,
+              0.877215189873418,
+              0.889493670886076,
+              0.901772151898734,
+              0.914050632911392,
+              0.926329113924051,
+              0.938607594936709,
+              0.950886075949367,
+              0.963164556962025,
+              0.975443037974684,
+              0.987721518987342,
+              1,
+              1,
+              1,
+              0.987721518987342,
+              0.975443037974684,
+              0.963164556962025,
+              0.950886075949367,
+              0.938607594936709,
+              0.926329113924051,
+              0.914050632911392,
+              0.901772151898734,
+              0.889493670886076,
+              0.877215189873418,
+              0.864936708860759,
+              0.852658227848101,
+              0.840379746835443,
+              0.828101265822785,
+              0.815822784810127,
+              0.803544303797468,
+              0.79126582278481,
+              0.778987341772152,
+              0.766708860759494,
+              0.754430379746835,
+              0.742151898734177,
+              0.729873417721519,
+              0.717594936708861,
+              0.705316455696203,
+              0.693037974683544,
+              0.680759493670886,
+              0.668481012658228,
+              0.65620253164557,
+              0.643924050632911,
+              0.631645569620253,
+              0.619367088607595,
+              0.607088607594937,
+              0.594810126582278,
+              0.58253164556962,
+              0.570253164556962,
+              0.557974683544304,
+              0.545696202531646,
+              0.533417721518987,
+              0.521139240506329,
+              0.508860759493671,
+              0.496582278481013,
+              0.484303797468354,
+              0.472025316455696,
+              0.459746835443038,
+              0.44746835443038,
+              0.435189873417722,
+              0.422911392405063,
+              0.410632911392405,
+              0.398354430379747,
+              0.386075949367089,
+              0.37379746835443,
+              0.361518987341772,
+              0.349240506329114,
+              0.336962025316456,
+              0.324683544303797,
+              0.312405063291139,
+              0.300126582278481,
+              0.287848101265823,
+              0.275569620253165,
+              0.263291139240506,
+              0.251012658227848,
+              0.23873417721519,
+              0.226455696202532,
+              0.214177215189873,
+              0.201898734177215,
+              0.189620253164557,
+              0.177341772151899,
+              0.165063291139241,
+              0.152784810126582,
+              0.140506329113924,
+              0.128227848101266,
+              0.115949367088608,
+              0.103670886075949,
+              0.0913924050632911,
+              0.0791139240506329,
+              0.0668354430379747,
+              0.0545569620253165,
+              0.0422784810126582,
+              0.03,
+              0.03
+            ],
+            "y": [
+              0.29758217112478,
+              0.29804964488147,
+              0.298509191271298,
+              0.298960364463315,
+              0.299402689638328,
+              0.299835661167574,
+              0.300258740735136,
+              0.300671355419022,
+              0.301072895750783,
+              0.301462713779556,
+              0.301840121173414,
+              0.302204387399175,
+              0.302554738031252,
+              0.302890353250825,
+              0.303210366608504,
+              0.303513864136508,
+              0.303799883909981,
+              0.304067416170772,
+              0.304315404140238,
+              0.30454274565925,
+              0.304748295802327,
+              0.304930870617113,
+              0.305089252138202,
+              0.305222194813613,
+              0.305328433460621,
+              0.305406692833322,
+              0.30545569883534,
+              0.305474191347018,
+              0.305460938557553,
+              0.305414752601197,
+              0.305334506197164,
+              0.305219149891587,
+              0.305067729405382,
+              0.304879402513831,
+              0.3046534548325,
+              0.304389313868796,
+              0.304086560725886,
+              0.303744938918599,
+              0.303364359877079,
+              0.302944904866049,
+              0.30248682322348,
+              0.301990527006983,
+              0.301456582312868,
+              0.300885697686217,
+              0.300278710158213,
+              0.299636569521786,
+              0.298960321486013,
+              0.298251090336125,
+              0.29751006167612,
+              0.296738465753924,
+              0.295937561775005,
+              0.295108623509223,
+              0.294252926395906,
+              0.293371736260427,
+              0.292466299676034,
+              0.291537835939964,
+              0.290587530583274,
+              0.289616530298882,
+              0.288625939150208,
+              0.287616815911668,
+              0.286590172389775,
+              0.285546972577614,
+              0.284488132504068,
+              0.283414520650704,
+              0.282326958822387,
+              0.281226223371429,
+              0.28011304668866,
+              0.278988118887718,
+              0.277852089620802,
+              0.276705569974843,
+              0.275549134406595,
+              0.274383322683401,
+              0.273208641803491,
+              0.272025567875683,
+              0.27083454794339,
+              0.26963600174198,
+              0.268430323381962,
+              0.267217882953213,
+              0.265999028047647,
+              0.264774085199482,
+              0.264774085199482,
+              0.365773846863927,
+              0.365272782972377,
+              0.364777807023426,
+              0.364289245551293,
+              0.363807446147891,
+              0.363332778903096,
+              0.362865637927419,
+              0.362406442956226,
+              0.361955641032932,
+              0.361513708266353,
+              0.36108115165472,
+              0.360658510965377,
+              0.360246360655076,
+              0.35984531181075,
+              0.359456014084596,
+              0.359079157590254,
+              0.358715474718553,
+              0.358365741821804,
+              0.358030780704873,
+              0.357711459849328,
+              0.35740869528405,
+              0.357123451002126,
+              0.356856738810067,
+              0.356609617482291,
+              0.356383191082217,
+              0.356178606302761,
+              0.355997048674984,
+              0.355839737496121,
+              0.35570791933942,
+              0.355602860030253,
+              0.35552583500795,
+              0.355478118042368,
+              0.355460968338979,
+              0.355475616145707,
+              0.35552324706655,
+              0.355604985386738,
+              0.355721876815349,
+              0.355874871145314,
+              0.356064805407814,
+              0.356292388147932,
+              0.356558185461979,
+              0.356862609407564,
+              0.35720590932266,
+              0.357588166471988,
+              0.358009292285694,
+              0.358469030278605,
+              0.35896696155389,
+              0.359502513618955,
+              0.360074972089365,
+              0.360683494740404,
+              0.361327127292986,
+              0.362004820293246,
+              0.362715446460396,
+              0.363457817928689,
+              0.364230702887323,
+              0.365032841216639,
+              0.365862958820263,
+              0.366719780452289,
+              0.367602040929994,
+              0.368508494701395,
+              0.369437923801088,
+              0.370389144276715,
+              0.371361011202797,
+              0.372352422420203,
+              0.373362321150292,
+              0.374389697634911,
+              0.375433589949205,
+              0.376493084125394,
+              0.377567313714087,
+              0.378655458896463,
+              0.379756745246937,
+              0.380870442232325,
+              0.381995861520702,
+              0.383132355161203,
+              0.384279313685381,
+              0.385436164171242,
+              0.386602368302871,
+              0.387777420451503,
+              0.388960845797947,
+              0.390152198511252,
+              0.29758217112478
+            ],
+            "text": [
+              "Asian Race Percentage: 0.03000000<br />Violent Crime Rate: 0.3438672",
+              "Asian Race Percentage: 0.04227848<br />Violent Crime Rate: 0.3435052",
+              "Asian Race Percentage: 0.05455696<br />Violent Crime Rate: 0.3431433",
+              "Asian Race Percentage: 0.06683544<br />Violent Crime Rate: 0.3427814",
+              "Asian Race Percentage: 0.07911392<br />Violent Crime Rate: 0.3424194",
+              "Asian Race Percentage: 0.09139241<br />Violent Crime Rate: 0.3420575",
+              "Asian Race Percentage: 0.10367089<br />Violent Crime Rate: 0.3416955",
+              "Asian Race Percentage: 0.11594937<br />Violent Crime Rate: 0.3413336",
+              "Asian Race Percentage: 0.12822785<br />Violent Crime Rate: 0.3409717",
+              "Asian Race Percentage: 0.14050633<br />Violent Crime Rate: 0.3406097",
+              "Asian Race Percentage: 0.15278481<br />Violent Crime Rate: 0.3402478",
+              "Asian Race Percentage: 0.16506329<br />Violent Crime Rate: 0.3398859",
+              "Asian Race Percentage: 0.17734177<br />Violent Crime Rate: 0.3395239",
+              "Asian Race Percentage: 0.18962025<br />Violent Crime Rate: 0.3391620",
+              "Asian Race Percentage: 0.20189873<br />Violent Crime Rate: 0.3388000",
+              "Asian Race Percentage: 0.21417722<br />Violent Crime Rate: 0.3384381",
+              "Asian Race Percentage: 0.22645570<br />Violent Crime Rate: 0.3380762",
+              "Asian Race Percentage: 0.23873418<br />Violent Crime Rate: 0.3377142",
+              "Asian Race Percentage: 0.25101266<br />Violent Crime Rate: 0.3373523",
+              "Asian Race Percentage: 0.26329114<br />Violent Crime Rate: 0.3369903",
+              "Asian Race Percentage: 0.27556962<br />Violent Crime Rate: 0.3366284",
+              "Asian Race Percentage: 0.28784810<br />Violent Crime Rate: 0.3362665",
+              "Asian Race Percentage: 0.30012658<br />Violent Crime Rate: 0.3359045",
+              "Asian Race Percentage: 0.31240506<br />Violent Crime Rate: 0.3355426",
+              "Asian Race Percentage: 0.32468354<br />Violent Crime Rate: 0.3351806",
+              "Asian Race Percentage: 0.33696203<br />Violent Crime Rate: 0.3348187",
+              "Asian Race Percentage: 0.34924051<br />Violent Crime Rate: 0.3344568",
+              "Asian Race Percentage: 0.36151899<br />Violent Crime Rate: 0.3340948",
+              "Asian Race Percentage: 0.37379747<br />Violent Crime Rate: 0.3337329",
+              "Asian Race Percentage: 0.38607595<br />Violent Crime Rate: 0.3333709",
+              "Asian Race Percentage: 0.39835443<br />Violent Crime Rate: 0.3330090",
+              "Asian Race Percentage: 0.41063291<br />Violent Crime Rate: 0.3326471",
+              "Asian Race Percentage: 0.42291139<br />Violent Crime Rate: 0.3322851",
+              "Asian Race Percentage: 0.43518987<br />Violent Crime Rate: 0.3319232",
+              "Asian Race Percentage: 0.44746835<br />Violent Crime Rate: 0.3315612",
+              "Asian Race Percentage: 0.45974684<br />Violent Crime Rate: 0.3311993",
+              "Asian Race Percentage: 0.47202532<br />Violent Crime Rate: 0.3308374",
+              "Asian Race Percentage: 0.48430380<br />Violent Crime Rate: 0.3304754",
+              "Asian Race Percentage: 0.49658228<br />Violent Crime Rate: 0.3301135",
+              "Asian Race Percentage: 0.50886076<br />Violent Crime Rate: 0.3297515",
+              "Asian Race Percentage: 0.52113924<br />Violent Crime Rate: 0.3293896",
+              "Asian Race Percentage: 0.53341772<br />Violent Crime Rate: 0.3290277",
+              "Asian Race Percentage: 0.54569620<br />Violent Crime Rate: 0.3286657",
+              "Asian Race Percentage: 0.55797468<br />Violent Crime Rate: 0.3283038",
+              "Asian Race Percentage: 0.57025316<br />Violent Crime Rate: 0.3279418",
+              "Asian Race Percentage: 0.58253165<br />Violent Crime Rate: 0.3275799",
+              "Asian Race Percentage: 0.59481013<br />Violent Crime Rate: 0.3272180",
+              "Asian Race Percentage: 0.60708861<br />Violent Crime Rate: 0.3268560",
+              "Asian Race Percentage: 0.61936709<br />Violent Crime Rate: 0.3264941",
+              "Asian Race Percentage: 0.63164557<br />Violent Crime Rate: 0.3261322",
+              "Asian Race Percentage: 0.64392405<br />Violent Crime Rate: 0.3257702",
+              "Asian Race Percentage: 0.65620253<br />Violent Crime Rate: 0.3254083",
+              "Asian Race Percentage: 0.66848101<br />Violent Crime Rate: 0.3250463",
+              "Asian Race Percentage: 0.68075949<br />Violent Crime Rate: 0.3246844",
+              "Asian Race Percentage: 0.69303797<br />Violent Crime Rate: 0.3243225",
+              "Asian Race Percentage: 0.70531646<br />Violent Crime Rate: 0.3239605",
+              "Asian Race Percentage: 0.71759494<br />Violent Crime Rate: 0.3235986",
+              "Asian Race Percentage: 0.72987342<br />Violent Crime Rate: 0.3232366",
+              "Asian Race Percentage: 0.74215190<br />Violent Crime Rate: 0.3228747",
+              "Asian Race Percentage: 0.75443038<br />Violent Crime Rate: 0.3225128",
+              "Asian Race Percentage: 0.76670886<br />Violent Crime Rate: 0.3221508",
+              "Asian Race Percentage: 0.77898734<br />Violent Crime Rate: 0.3217889",
+              "Asian Race Percentage: 0.79126582<br />Violent Crime Rate: 0.3214269",
+              "Asian Race Percentage: 0.80354430<br />Violent Crime Rate: 0.3210650",
+              "Asian Race Percentage: 0.81582278<br />Violent Crime Rate: 0.3207031",
+              "Asian Race Percentage: 0.82810127<br />Violent Crime Rate: 0.3203411",
+              "Asian Race Percentage: 0.84037975<br />Violent Crime Rate: 0.3199792",
+              "Asian Race Percentage: 0.85265823<br />Violent Crime Rate: 0.3196172",
+              "Asian Race Percentage: 0.86493671<br />Violent Crime Rate: 0.3192553",
+              "Asian Race Percentage: 0.87721519<br />Violent Crime Rate: 0.3188934",
+              "Asian Race Percentage: 0.88949367<br />Violent Crime Rate: 0.3185314",
+              "Asian Race Percentage: 0.90177215<br />Violent Crime Rate: 0.3181695",
+              "Asian Race Percentage: 0.91405063<br />Violent Crime Rate: 0.3178075",
+              "Asian Race Percentage: 0.92632911<br />Violent Crime Rate: 0.3174456",
+              "Asian Race Percentage: 0.93860759<br />Violent Crime Rate: 0.3170837",
+              "Asian Race Percentage: 0.95088608<br />Violent Crime Rate: 0.3167217",
+              "Asian Race Percentage: 0.96316456<br />Violent Crime Rate: 0.3163598",
+              "Asian Race Percentage: 0.97544304<br />Violent Crime Rate: 0.3159978",
+              "Asian Race Percentage: 0.98772152<br />Violent Crime Rate: 0.3156359",
+              "Asian Race Percentage: 1.00000000<br />Violent Crime Rate: 0.3152740",
+              "Asian Race Percentage: 1.00000000<br />Violent Crime Rate: 0.3152740",
+              "Asian Race Percentage: 1.00000000<br />Violent Crime Rate: 0.3152740",
+              "Asian Race Percentage: 0.98772152<br />Violent Crime Rate: 0.3156359",
+              "Asian Race Percentage: 0.97544304<br />Violent Crime Rate: 0.3159978",
+              "Asian Race Percentage: 0.96316456<br />Violent Crime Rate: 0.3163598",
+              "Asian Race Percentage: 0.95088608<br />Violent Crime Rate: 0.3167217",
+              "Asian Race Percentage: 0.93860759<br />Violent Crime Rate: 0.3170837",
+              "Asian Race Percentage: 0.92632911<br />Violent Crime Rate: 0.3174456",
+              "Asian Race Percentage: 0.91405063<br />Violent Crime Rate: 0.3178075",
+              "Asian Race Percentage: 0.90177215<br />Violent Crime Rate: 0.3181695",
+              "Asian Race Percentage: 0.88949367<br />Violent Crime Rate: 0.3185314",
+              "Asian Race Percentage: 0.87721519<br />Violent Crime Rate: 0.3188934",
+              "Asian Race Percentage: 0.86493671<br />Violent Crime Rate: 0.3192553",
+              "Asian Race Percentage: 0.85265823<br />Violent Crime Rate: 0.3196172",
+              "Asian Race Percentage: 0.84037975<br />Violent Crime Rate: 0.3199792",
+              "Asian Race Percentage: 0.82810127<br />Violent Crime Rate: 0.3203411",
+              "Asian Race Percentage: 0.81582278<br />Violent Crime Rate: 0.3207031",
+              "Asian Race Percentage: 0.80354430<br />Violent Crime Rate: 0.3210650",
+              "Asian Race Percentage: 0.79126582<br />Violent Crime Rate: 0.3214269",
+              "Asian Race Percentage: 0.77898734<br />Violent Crime Rate: 0.3217889",
+              "Asian Race Percentage: 0.76670886<br />Violent Crime Rate: 0.3221508",
+              "Asian Race Percentage: 0.75443038<br />Violent Crime Rate: 0.3225128",
+              "Asian Race Percentage: 0.74215190<br />Violent Crime Rate: 0.3228747",
+              "Asian Race Percentage: 0.72987342<br />Violent Crime Rate: 0.3232366",
+              "Asian Race Percentage: 0.71759494<br />Violent Crime Rate: 0.3235986",
+              "Asian Race Percentage: 0.70531646<br />Violent Crime Rate: 0.3239605",
+              "Asian Race Percentage: 0.69303797<br />Violent Crime Rate: 0.3243225",
+              "Asian Race Percentage: 0.68075949<br />Violent Crime Rate: 0.3246844",
+              "Asian Race Percentage: 0.66848101<br />Violent Crime Rate: 0.3250463",
+              "Asian Race Percentage: 0.65620253<br />Violent Crime Rate: 0.3254083",
+              "Asian Race Percentage: 0.64392405<br />Violent Crime Rate: 0.3257702",
+              "Asian Race Percentage: 0.63164557<br />Violent Crime Rate: 0.3261322",
+              "Asian Race Percentage: 0.61936709<br />Violent Crime Rate: 0.3264941",
+              "Asian Race Percentage: 0.60708861<br />Violent Crime Rate: 0.3268560",
+              "Asian Race Percentage: 0.59481013<br />Violent Crime Rate: 0.3272180",
+              "Asian Race Percentage: 0.58253165<br />Violent Crime Rate: 0.3275799",
+              "Asian Race Percentage: 0.57025316<br />Violent Crime Rate: 0.3279418",
+              "Asian Race Percentage: 0.55797468<br />Violent Crime Rate: 0.3283038",
+              "Asian Race Percentage: 0.54569620<br />Violent Crime Rate: 0.3286657",
+              "Asian Race Percentage: 0.53341772<br />Violent Crime Rate: 0.3290277",
+              "Asian Race Percentage: 0.52113924<br />Violent Crime Rate: 0.3293896",
+              "Asian Race Percentage: 0.50886076<br />Violent Crime Rate: 0.3297515",
+              "Asian Race Percentage: 0.49658228<br />Violent Crime Rate: 0.3301135",
+              "Asian Race Percentage: 0.48430380<br />Violent Crime Rate: 0.3304754",
+              "Asian Race Percentage: 0.47202532<br />Violent Crime Rate: 0.3308374",
+              "Asian Race Percentage: 0.45974684<br />Violent Crime Rate: 0.3311993",
+              "Asian Race Percentage: 0.44746835<br />Violent Crime Rate: 0.3315612",
+              "Asian Race Percentage: 0.43518987<br />Violent Crime Rate: 0.3319232",
+              "Asian Race Percentage: 0.42291139<br />Violent Crime Rate: 0.3322851",
+              "Asian Race Percentage: 0.41063291<br />Violent Crime Rate: 0.3326471",
+              "Asian Race Percentage: 0.39835443<br />Violent Crime Rate: 0.3330090",
+              "Asian Race Percentage: 0.38607595<br />Violent Crime Rate: 0.3333709",
+              "Asian Race Percentage: 0.37379747<br />Violent Crime Rate: 0.3337329",
+              "Asian Race Percentage: 0.36151899<br />Violent Crime Rate: 0.3340948",
+              "Asian Race Percentage: 0.34924051<br />Violent Crime Rate: 0.3344568",
+              "Asian Race Percentage: 0.33696203<br />Violent Crime Rate: 0.3348187",
+              "Asian Race Percentage: 0.32468354<br />Violent Crime Rate: 0.3351806",
+              "Asian Race Percentage: 0.31240506<br />Violent Crime Rate: 0.3355426",
+              "Asian Race Percentage: 0.30012658<br />Violent Crime Rate: 0.3359045",
+              "Asian Race Percentage: 0.28784810<br />Violent Crime Rate: 0.3362665",
+              "Asian Race Percentage: 0.27556962<br />Violent Crime Rate: 0.3366284",
+              "Asian Race Percentage: 0.26329114<br />Violent Crime Rate: 0.3369903",
+              "Asian Race Percentage: 0.25101266<br />Violent Crime Rate: 0.3373523",
+              "Asian Race Percentage: 0.23873418<br />Violent Crime Rate: 0.3377142",
+              "Asian Race Percentage: 0.22645570<br />Violent Crime Rate: 0.3380762",
+              "Asian Race Percentage: 0.21417722<br />Violent Crime Rate: 0.3384381",
+              "Asian Race Percentage: 0.20189873<br />Violent Crime Rate: 0.3388000",
+              "Asian Race Percentage: 0.18962025<br />Violent Crime Rate: 0.3391620",
+              "Asian Race Percentage: 0.17734177<br />Violent Crime Rate: 0.3395239",
+              "Asian Race Percentage: 0.16506329<br />Violent Crime Rate: 0.3398859",
+              "Asian Race Percentage: 0.15278481<br />Violent Crime Rate: 0.3402478",
+              "Asian Race Percentage: 0.14050633<br />Violent Crime Rate: 0.3406097",
+              "Asian Race Percentage: 0.12822785<br />Violent Crime Rate: 0.3409717",
+              "Asian Race Percentage: 0.11594937<br />Violent Crime Rate: 0.3413336",
+              "Asian Race Percentage: 0.10367089<br />Violent Crime Rate: 0.3416955",
+              "Asian Race Percentage: 0.09139241<br />Violent Crime Rate: 0.3420575",
+              "Asian Race Percentage: 0.07911392<br />Violent Crime Rate: 0.3424194",
+              "Asian Race Percentage: 0.06683544<br />Violent Crime Rate: 0.3427814",
+              "Asian Race Percentage: 0.05455696<br />Violent Crime Rate: 0.3431433",
+              "Asian Race Percentage: 0.04227848<br />Violent Crime Rate: 0.3435052",
+              "Asian Race Percentage: 0.03000000<br />Violent Crime Rate: 0.3438672",
+              "Asian Race Percentage: 0.03000000<br />Violent Crime Rate: 0.3438672"
+            ],
+            "type": "scatter",
+            "mode": "lines",
+            "line": {
+              "width": 3.77952755905512,
+              "color": "transparent",
+              "dash": "solid"
+            },
+            "fill": "toself",
+            "fillcolor": "rgba(114,114,114,0.4)",
+            "hoveron": "points",
+            "hoverinfo": "x+y",
+            "showlegend": false,
             "xaxis": "x",
             "yaxis": "y",
             "frame": null
@@ -1754,17 +1675,27 @@
         ],
         "layout": {
           "margin": {
-            "t": 25.7412480974125,
+            "t": 43.2754946727549,
             "r": 7.30593607305936,
-            "b": 91.7483398863277,
-            "l": 159.734329597343
+            "b": 39.6955859969559,
+            "l": 48.9497716894977
           },
-          "plot_bgcolor": "rgba(235,235,235,1)",
-          "paper_bgcolor": "rgba(255,255,255,1)",
+          "plot_bgcolor": "rgba(34,34,34,1)",
+          "paper_bgcolor": "rgba(34,34,34,1)",
           "font": {
-            "color": "rgba(0,0,0,1)",
+            "color": "rgba(255,255,255,1)",
             "family": "'Righteous'",
             "size": 14.6118721461187
+          },
+          "title": {
+            "text": "Asian Race Percentage vs. Crime Rate in California",
+            "font": {
+              "color": "rgba(255,255,255,1)",
+              "family": "'Righteous'",
+              "size": 17.5342465753425
+            },
+            "x": 0.5,
+            "xref": "paper"
           },
           "xaxis": {
             "domain": [
@@ -1775,83 +1706,60 @@
             "type": "linear",
             "autorange": false,
             "range": [
-              0.4,
-              12.6
+              -0.0185,
+              1.0485
             ],
             "tickmode": "array",
             "ticktext": [
-              "Violent Crime Rate",
-              "Population",
-              "Population Density",
-              "Black Race Percentage",
-              "White Rate Percentage",
-              "Asian Race Percentage",
-              "Hispanic Race Percentage",
-              "Age Range Percentage (12-29)",
-              "Age Range Percentage (65+)",
-              "Median Income",
-              "Number of Streets",
-              "Unemployed Percentage"
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
             ],
             "tickvals": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12
+              3.46944695195361e-18,
+              0.25,
+              0.5,
+              0.75,
+              1
             ],
             "categoryorder": "array",
             "categoryarray": [
-              "Violent Crime Rate",
-              "Population",
-              "Population Density",
-              "Black Race Percentage",
-              "White Rate Percentage",
-              "Asian Race Percentage",
-              "Hispanic Race Percentage",
-              "Age Range Percentage (12-29)",
-              "Age Range Percentage (65+)",
-              "Median Income",
-              "Number of Streets",
-              "Unemployed Percentage"
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
             ],
             "nticks": null,
-            "ticks": "outside",
-            "tickcolor": "rgba(51,51,51,1)",
+            "ticks": "",
+            "tickcolor": null,
             "ticklen": 3.65296803652968,
-            "tickwidth": 0.66417600664176,
+            "tickwidth": 0,
             "showticklabels": true,
             "tickfont": {
-              "color": "rgba(77,77,77,1)",
+              "color": "rgba(175,175,175,1)",
               "family": "'Righteous'",
-              "size": 10.6268161062682
+              "size": 11.689497716895
             },
-            "tickangle": -45,
+            "tickangle": 0,
             "showline": false,
             "linecolor": null,
             "linewidth": 0,
             "showgrid": true,
-            "gridcolor": "rgba(255,255,255,1)",
+            "gridcolor": "rgba(47,47,47,1)",
             "gridwidth": 0.66417600664176,
             "zeroline": false,
             "anchor": "y",
             "title": {
-              "text": "",
+              "text": "Asian Race Percentage",
               "font": {
-                "color": null,
-                "family": null,
-                "size": 0
+                "color": "rgba(255,255,255,1)",
+                "family": "'Righteous'",
+                "size": 14.6118721461187
               }
             },
-            "scaleanchor": "y",
-            "scaleratio": 1,
             "hoverformat": ".2f"
           },
           "yaxis": {
@@ -1863,83 +1771,60 @@
             "type": "linear",
             "autorange": false,
             "range": [
-              0.4,
-              12.6
+              -0.0395,
+              1.0495
             ],
             "tickmode": "array",
             "ticktext": [
-              "Violent Crime Rate",
-              "Population",
-              "Population Density",
-              "Black Race Percentage",
-              "White Rate Percentage",
-              "Asian Race Percentage",
-              "Hispanic Race Percentage",
-              "Age Range Percentage (12-29)",
-              "Age Range Percentage (65+)",
-              "Median Income",
-              "Number of Streets",
-              "Unemployed Percentage"
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
             ],
             "tickvals": [
-              1,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9,
-              10,
-              11,
-              12
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
             ],
             "categoryorder": "array",
             "categoryarray": [
-              "Violent Crime Rate",
-              "Population",
-              "Population Density",
-              "Black Race Percentage",
-              "White Rate Percentage",
-              "Asian Race Percentage",
-              "Hispanic Race Percentage",
-              "Age Range Percentage (12-29)",
-              "Age Range Percentage (65+)",
-              "Median Income",
-              "Number of Streets",
-              "Unemployed Percentage"
+              "0.00",
+              "0.25",
+              "0.50",
+              "0.75",
+              "1.00"
             ],
             "nticks": null,
-            "ticks": "outside",
-            "tickcolor": "rgba(51,51,51,1)",
+            "ticks": "",
+            "tickcolor": null,
             "ticklen": 3.65296803652968,
-            "tickwidth": 0.66417600664176,
+            "tickwidth": 0,
             "showticklabels": true,
             "tickfont": {
-              "color": "rgba(77,77,77,1)",
+              "color": "rgba(175,175,175,1)",
               "family": "'Righteous'",
-              "size": 10.6268161062682
+              "size": 11.689497716895
             },
             "tickangle": 0,
             "showline": false,
             "linecolor": null,
             "linewidth": 0,
             "showgrid": true,
-            "gridcolor": "rgba(255,255,255,1)",
+            "gridcolor": "rgba(47,47,47,1)",
             "gridwidth": 0.66417600664176,
             "zeroline": false,
             "anchor": "x",
             "title": {
-              "text": "",
+              "text": "Crime Rate",
               "font": {
-                "color": null,
-                "family": null,
-                "size": 0
+                "color": "rgba(255,255,255,1)",
+                "family": "'Righteous'",
+                "size": 14.6118721461187
               }
             },
-            "scaleanchor": "x",
-            "scaleratio": 1,
             "hoverformat": ".2f"
           },
           "shapes": [
@@ -1963,18 +1848,18 @@
           ],
           "showlegend": false,
           "legend": {
-            "bgcolor": "rgba(255,255,255,1)",
-            "bordercolor": "transparent",
-            "borderwidth": 1.88976377952756,
+            "bgcolor": null,
+            "bordercolor": null,
+            "borderwidth": 0,
             "font": {
-              "color": "rgba(0,0,0,1)",
+              "color": "rgba(255,255,255,1)",
               "family": "'Righteous'",
               "size": 11.689497716895
             },
             "title": {
               "text": "",
               "font": {
-                "color": "rgba(0,0,0,1)",
+                "color": "rgba(255,255,255,1)",
                 "family": "'Righteous'",
                 "size": 14.6118721461187
               }
@@ -2119,19 +2004,6 @@
           }
         },
         "calls": [
-          {
-            "method": "addProviderTiles",
-            "args": [
-              "CartoDB.Positron",
-              null,
-              null,
-              {
-                "errorTileUrl": "",
-                "noWrap": false,
-                "detectRetina": false
-              }
-            ]
-          },
           {
             "method": "addTiles",
             "args": [
@@ -8191,6 +8063,73 @@
               },
               null
             ]
+          },
+          {
+            "method": "addTiles",
+            "args": [
+              "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              null,
+              "Neighbourhood",
+              {
+                "minZoom": 0,
+                "maxZoom": 18,
+                "tileSize": 256,
+                "subdomains": "abc",
+                "errorTileUrl": "",
+                "tms": false,
+                "noWrap": false,
+                "zoomOffset": 0,
+                "zoomReverse": false,
+                "opacity": 1,
+                "zIndex": 1,
+                "detectRetina": false,
+                "attribution": "&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"
+              }
+            ]
+          },
+          {
+            "method": "addProviderTiles",
+            "args": [
+              "CartoDB.VoyagerLabelsUnder",
+              null,
+              "Basemap",
+              {
+                "errorTileUrl": "",
+                "noWrap": false,
+                "detectRetina": false
+              }
+            ]
+          },
+          {
+            "method": "addProviderTiles",
+            "args": [
+              "Esri.WorldImagery",
+              null,
+              "Satellite",
+              {
+                "errorTileUrl": "",
+                "noWrap": false,
+                "detectRetina": false
+              }
+            ]
+          },
+          {
+            "method": "addLayersControl",
+            "args": [
+              [
+                "Basemap",
+                "Neighbourhood",
+                "Satellite"
+              ],
+              [
+
+              ],
+              {
+                "collapsed": false,
+                "autoZIndex": true,
+                "position": "topright"
+              }
+            ]
           }
         ],
         "limits": {
@@ -8211,6 +8150,26 @@
 
       ],
       "deps": [
+        {
+          "name": "leaflet-markercluster",
+          "version": "1.0.5",
+          "src": {
+            "href": "leaflet-markercluster-1.0.5"
+          },
+          "meta": null,
+          "script": [
+            "leaflet.markercluster.js",
+            "leaflet.markercluster.freezable.js",
+            "leaflet.markercluster.layersupport.js"
+          ],
+          "stylesheet": [
+            "MarkerCluster.css",
+            "MarkerCluster.Default.css"
+          ],
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        },
         {
           "name": "leaflet-providers",
           "version": "1.9.0",
@@ -8234,26 +8193,6 @@
           "meta": null,
           "script": "leaflet-providers-plugin.js",
           "stylesheet": null,
-          "head": null,
-          "attachment": null,
-          "all_files": true
-        },
-        {
-          "name": "leaflet-markercluster",
-          "version": "1.0.5",
-          "src": {
-            "href": "leaflet-markercluster-1.0.5"
-          },
-          "meta": null,
-          "script": [
-            "leaflet.markercluster.js",
-            "leaflet.markercluster.freezable.js",
-            "leaflet.markercluster.layersupport.js"
-          ],
-          "stylesheet": [
-            "MarkerCluster.css",
-            "MarkerCluster.Default.css"
-          ],
           "head": null,
           "attachment": null,
           "all_files": true
