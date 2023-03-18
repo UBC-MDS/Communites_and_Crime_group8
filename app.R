@@ -118,7 +118,8 @@ ui <- navbarPage('Crime Rate Finder App',
                                          plotlyOutput(outputId = 'lineplot')
                                 ),
                                 tabPanel('Communities in the State',
-                                         DT::DTOutput(outputId = 'table'))
+                                         DT::DTOutput(outputId = 'table'),
+                                         downloadButton("download", "Download .tsv"))
                               )
                             )
                           )
@@ -129,13 +130,13 @@ ui <- navbarPage('Crime Rate Finder App',
                           br(),
                           p('Thank you for using our app!'),
                           br(),
-                          p('If you want to know more about the app, 
+                          p('If you want to know more about our app, 
                             please visit our GitHub repository:'),
                           tags$a(href = 'https://github.com/UBC-MDS/Communites_and_Crime_group8', 
                                  'GitHub'),
                           br(),
                           br(),
-                          p('Here attachs some other useful links:'),
+                          p('You can find some useful links here:'),
                           tags$a(href = 'https://ucr.fbi.gov/crime-in-the-u.s', 
                                  'FBI Crime Report'),
                           br(),
@@ -256,10 +257,6 @@ server <- function(input, output, session) {
   # This code generates a table displaying crime rates by community
   
   output$table <-  renderDT({
-    # Compute breaks for color palette
-    brks <- quantile(data$testrun, probs = seq(.05, .95, .01), na.rm = TRUE) 
-    clrs <- round(seq(150, 40, length.out = length(brks) + 1), 0) %>%
-      {paste0("rgb(150,", ., ",", ., ")")}
     
     # Select columns to display
     filtered_data_table <- filtered_data_plot() |>
@@ -277,6 +274,13 @@ server <- function(input, output, session) {
                   color = 'black')
   })
   
+  # output for downloading filtered dataset
+  output$download <- downloadHandler(
+    filename = 'filtered_data.tsv',
+    content = function(file) {
+      write_tsv(filtered_data_plot(), file)
+    }
+  )
   ## LEAFLET MAP
   # This code generates a leaflet map displaying crime rates by community
   
@@ -289,17 +293,26 @@ server <- function(input, output, session) {
     # Add map tiles and markers
     filtered_data() |> 
       leaflet::leaflet() |> 
-      leaflet::addProviderTiles(providers$CartoDB.Positron) |> addTiles() |> addMarkers(
-        
+      addTiles() |>
+      addMarkers(
         popup = paste(filtered_data()$area,
                       "in",
                       filtered_data()$state,
                       'has crime rate of',
                       filtered_data()$violent_crime_rate),
         clusterOptions = markerClusterOptions()
-      )
+      ) |>
+      addTiles(group = "Neighbourhood") |>  
+      addProviderTiles(providers$CartoDB.VoyagerLabelsUnder,
+                       group = "Basemap") |> 
+      addProviderTiles(providers$Esri.WorldImagery,
+                       group = "Satellite") |>
+      addLayersControl(
+        baseGroups = c("Basemap","Neighbourhood", "Satellite"),
+        options = layersControlOptions(collapsed = FALSE) )
+    
   })
 }
 
-# Create Shiny Aapp
+# Creates Shiny Aapp
 shinyApp(ui, server)
