@@ -65,7 +65,8 @@ ui <- navbarPage('Crime Rate Finder App',
                                    selectInput(inputId = 'state',
                                                label = 'Select State:',
                                                choices = c('All', sort(unique(data$state))),
-                                               selected = 'All'),
+                                               selected = 'All',
+                                               multiple = TRUE),
                                    selectInput(inputId = 'city',
                                                label = 'Select Community:',
                                                choices = c())
@@ -195,16 +196,18 @@ server <- function(input, output, session) {
   # This code generates a line plot displaying crime rates by community
   
   observeEvent(input$state, {
-    if (input$state == 'All'){
+    
+    print(length(input$state))
+    if (length(input$state) == 1 & "All" %in% input$state){
       citiesToShow = data %>% dplyr::pull(area)
     }else{
       # Filter countries based on current continent selection
+      input$state = input$state - 'All'
       citiesToShow = data %>% 
         dplyr::filter(state %in% input$state) %>% dplyr::pull(area)
     }
-    
+    print('hi')
     print(input$state)
-    print(citiesToShow)
     
     # Update the actual input
     updateSelectInput(session, "city", choices = c('All', sort(citiesToShow)), 
@@ -213,18 +216,19 @@ server <- function(input, output, session) {
   })
   filtered_data <-reactive({
     print(input$state)
+    temp <- data
     if (input$state == 'All'){
-      data
+      temp
     }else {
-      if (input$city == 'All'){
-        data |>
-          dplyr::filter(state == input$state)
-      }else{
-        data |>
-          dplyr::filter(state == input$state) |>
-          dplyr::filter(area == input$city)}
-    }
-  })
+        temp <- data |>
+          dplyr::filter(state %in% input$state) 
+  }
+  
+  if (input$city == 'All'){
+    temp
+  }else{data |>
+      dplyr::filter(area %in% input$city)
+  }})
   
   
   filtered_data_plot <-reactive({
