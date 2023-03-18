@@ -47,19 +47,23 @@ The top menu is used for overall navigation and will include a 'Data Exploration
 
 #### Data Exploration
 
-![Map](img/Landing_page.png)
+![Map](img/landing_page.png)
 
 #### Correlation
 
-![Correlation Plot](img/Heatmap.png)
+![Correlation Plot](img/correlation_plot.png)
 
 #### Scatter -\> Scatterplot
 
-![Scatterplot](img/Scatterplot.png)
+![Scatterplot](img/scatter_plot.png)
 
 #### Scatter -\> Communities by State
 
-![Table](img/Communities_by_state.png)
+![Table](img/table_download.png)
+
+#### More Information
+
+![Links](img/more_info.png)
 
 ### Contributing
 
