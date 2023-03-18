@@ -1,5 +1,16 @@
 <!-- #region -->
 
+# Authors
+
+-   Sarah Abdelazim
+-   Daniel Merigo
+-   Luke Yang
+-   Chenyang Wang
+
+# Welcome!
+
+In tnhis README you will find all the information you will need to set up, use and contribute to the Communities and Crime Dashboard. Please follow our [Contributing Guidelines](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CONTRIBUTING) and be mindful of our [Code of Conduct](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CODE_OF_CONDUCT). Please enjoy and we hope this dashboard is of use on your projects!
+
 # Crime Rate Finder App
 
 Link to the dashboard: [Crime Rate Finder](https://missarah.shinyapps.io/Communites_and_Crime_group8/)
@@ -54,7 +65,19 @@ The top menu is used for overall navigation and will include a 'Data Exploration
 
 Contributors: Sarah Abdelazim, Luke Yang, Chenyang Wang, Daniel Merigo.
 
-Interested in contributing? Check out the contributing guidelines. We would love to know what other datasets we can bring into our dashboard to make it more useful. Please also feel free to offer suggestions on other interactive options you'd like to see. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+Interested in contributing? Check out the contributing guidelines [here](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CONTRIBUTING). We would love to know what other datasets we can bring into our dashboard to make it more useful. Please also feel free to offer suggestions on other interactive options you'd like to see. Please note that this project is released with a [Code of Conduct](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CODE_OF_CONDUCT). By contributing to this project, you agree to abide by its terms.
+
+### Running Locally
+
+1.  Please follow the forking procedures [here](https://docs.github.com/en/get-started/quickstart/contributing-to-projects), including cloning the forked repository.
+2.  Open app.R from the main repository folder.
+3.  Make sure to have the necessary packages installed and up to date:
+    -   You can install missing packages by running the following command in the R console:
+
+        -   install.packages(c("readr", "shiny", "bslib", "leaflet", "DT", "ggplot2", "plotly", "thematic", "ggcorrplot"))
+4.  Open `app.R` from the main folder using R Studio and click `Run App` in the top right corner of the screen.
+
+![](img/Run.png)
 
 ## License
 

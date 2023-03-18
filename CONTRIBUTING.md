@@ -10,16 +10,16 @@ You can use the table of contents icon in the top left corner to jump around thi
 
 To get an overview of the project, read the [README](README). To contribute with our project, here are some resources to help you get started with open source contributions:
 
-- [Finding ways to contribute to open source on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
-- [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
-- [Contribute to a Project](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
+-   [Finding ways to contribute to open source on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
+-   [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
+-   [Contribute to a Project](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
 
 ## Getting started
 
 You can contribute to our project in many way! Here are just a few examples of things we're looking for:
 
-- [Issues](https://github.com/UBC-MDS/pokemon-type-predictor/issues): if there are any problems with our code or documents, we want to know about it! Open an issue and we'll get right on it.
-- [Forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests): the best way to make suggestions to our code!
+-   [Issues](https://github.com/UBC-MDS/pokemon-type-predictor/issues): if there are any problems with our code or documents, we want to know about it! Open an issue and we'll get right on it.
+-   [Forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests): the best way to make suggestions to our code!
 
 ### Issues
 
@@ -35,7 +35,7 @@ Look through existing issues and if any interest you, feel free to open a PR wit
 
 ### Make Changes to our Code
 
-Follow the [contributing to a project](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) guidelines to open your own fork of the project and commit your changes. Then, open your pull request and wait for one of the gym leaders (administrators) to review it and hopefully we can incorporate your changes! Don't forget to self-review your update to speed up the review process.
+Follow the [contributing to a project](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) guidelines to open your own fork of the project and commit your changes. Then, open your pull request and wait for one of the administrators to review it and hopefully we can incorporate your changes! Don't forget to self-review your update to speed up the review process.
 
 We follow the PEP8 [style guide](https://peps.python.org/) so please ensure code is tidy and easy to read as such.
 
@@ -52,8 +52,8 @@ Make sure you fill in the proper documentation to help our team understand the c
 After these steps, your PR will be merged! On behalf of the members of this repo, we thank you for your contribution.
 
 ## Contributing Members (authors)
- 
-- Sarah Abdelazim 
-- Daniel Merigo 
-- Luke Yang
-- Chenyang Wang
+
+-   Sarah Abdelazim
+-   Daniel Merigo
+-   Luke Yang
+-   Chenyang Wang
