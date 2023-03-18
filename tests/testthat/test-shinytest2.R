@@ -21,7 +21,9 @@ test_that("{shinytest2} recording: new_york_scatter_asian", {
 })
 
 
-test_that("{shinytest2} recording: default_test", {
-  app <- AppDriver$new(name = "default_test", height = 737, width = 1169)
+
+test_that("{shinytest2} recording: default_corr", {
+  app <- AppDriver$new(name = "default_corr", height = 737, width = 1169)
+  app$set_inputs(main_page = "Correlation")
   app$expect_values()
 })
