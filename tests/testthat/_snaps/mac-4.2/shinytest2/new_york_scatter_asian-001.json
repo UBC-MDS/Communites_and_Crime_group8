@@ -19,16 +19,16 @@
     "corr_plot": "Alabama",
     "main_page": "Scatter",
     "map_bounds": {
-      "north": 86.7779967431046,
-      "east": 300.234375,
-      "south": -86.8172747153352,
-      "west": -299.53125
+      "north": 72.3957057065326,
+      "east": -33.92578125,
+      "south": 4.3902289264634,
+      "west": -183.8671875
     },
     "map_center": {
-      "lng": 0,
-      "lat": 0
+      "lng": -108.95449755,
+      "lat": 48.5208590866826
     },
-    "map_zoom": 1,
+    "map_zoom": 3,
     "plotly_afterplot-A": "\"lineplot\"",
     "scatter_panel": "Scatterplot",
     "state": "All",

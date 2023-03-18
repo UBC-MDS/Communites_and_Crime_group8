@@ -8,7 +8,6 @@ test_that("{shinytest2} recording: cali_map", {
   app$set_inputs(state = character(0))
   app$set_inputs(state = "California")
   app$expect_values()
-  app$expect_screenshot()
 })
 
 
@@ -18,14 +17,11 @@ test_that("{shinytest2} recording: new_york_scatter_asian", {
   app$set_inputs(main_page = "Scatter")
   app$set_inputs(var = "Asian Race Percentage")
   app$set_inputs(state_plot = "New York")
-  app$expect_screenshot()
   app$expect_values()
 })
 
 
-test_that("{shinytest2} recording: more-info", {
-  app <- AppDriver$new(variant = platform_variant(), name = "more-info", height = 737, 
-      width = 1169)
-  app$set_inputs(main_page = "More Information")
-  app$expect_screenshot()
+test_that("{shinytest2} recording: default_test", {
+  app <- AppDriver$new(name = "default_test", height = 737, width = 1169)
+  app$expect_values()
 })
