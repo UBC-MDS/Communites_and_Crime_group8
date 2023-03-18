@@ -22,6 +22,7 @@ In this README you will find all the information you will need to set up, use an
 -   [Contributing](#Contributing)
 -   [License](#License)
 -   [Authors](#Authors)
+-   [Reference](#Reference)
 
 <!-- #region -->
 
@@ -110,4 +111,16 @@ Please refer to our license file [here](https://github.com/UBC-MDS/Communites_an
 -   Sarah Abdelazim
 -   Daniel Merigo
 -   Luke Yang
--   Chenyang Wang <!-- #endregion -->
+-   Chenyang Wang 
+
+<a href="https://github.com/UBC-MDS/chembox/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UBC-MDS/Communites_and_Crime_group8&max=1000" />
+</a>
+
+
+<!-- #endregion -->
+
+
+## Reference
+
+The data set can be found [here](https://archive.ics.uci.edu/ml/datasets/communities+and+crime). For more information on US crime rates, you can visit the [FBI Crime Report](https://ucr.fbi.gov/crime-in-the-u.s).
