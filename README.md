@@ -10,7 +10,8 @@
 ---
 
 In this README you will find all the information you will need to set up, use and contribute to the Communities and Crime Dashboard. Please follow our [Contributing Guidelines](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CONTRIBUTING) and be mindful of our [Code of Conduct](https://github.com/UBC-MDS/Communites_and_Crime_group8/blob/main/CODE_OF_CONDUCT). Please enjoy and we hope this dashboard is of use on your projects!
-=======
+
+---
 - [Welcome](#Welcome!)
 - [Motivation](#Motivation)
 - [Dashboard Overview](#Dashboard-Overview)
@@ -37,9 +38,9 @@ This interactive visualization and exploration tool will contain an interactive 
 
 The top menu is used for overall navigation and will include 'Main Dashboard', 'Data Sources' and 'Download Data' options:
 
--   'Data Sources' will navigate the user to a document detailing the sources for the data presented and explanations of the data points used
+- 'Data Sources' will navigate the user to a document detailing the sources for the data presented and explanations of the data points used
 
--   'Download Data' aims to give the user the capability of downloading a table with the data as sliced using the filters available On the left there will be a filter menu to slice the data and show specific insights. On the second tab (which will maintain the filters made on the left-hand panel) it will include a bar chart denoting the communities' composition and another bar chart denoting police composition. Below it will include a line chart showing the crime statistics in a time series (for 1995).
+- 'Download Data' aims to give the user the capability of downloading a table with the data as sliced using the filters available On the left there will be a filter menu to slice the data and show specific insights. On the second tab (which will maintain the filters made on the left-hand panel) it will include a bar chart denoting the communities' composition and another bar chart denoting police composition. Below it will include a line chart showing the crime statistics in a time series (for 1995).
 
 In the left-hand filter menu, the user will have the liberty of choosing: State, county, time interval (within 1995), community type (based on income and racial composition), police presence (amount of police officers) and police budget allocated. It will also include cards stating "Percentage of Violent Crimes", 'Overall Country Crime Percentage' and 'Police Presence'
 
@@ -49,11 +50,11 @@ The Crime Rate Finder App contains an interactive map as a landing page that wil
 
 The top menu is used for overall navigation and will include a 'Data Exploration', 'Correlation' and 'Scatter' options:
 
--   'Data Exploration' enables users to select "State" and "Community" to look at the crime rate at each community on a map, and users can also directly swipe and zoom the map to to refer the respective crime rate. When the user arrives at a data point and clicks on the marker a callout will indicate the Crime Rate in the Community.
+- 'Data Exploration' enables users to select "State" and "Community" to look at the crime rate at each community on a map, and users can also directly swipe and zoom the map to to refer the respective crime rate. When the user arrives at a data point and clicks on the marker a callout will indicate the Crime Rate in the Community.
 
--   'Correlation' aims to explore the correlation between community composition and violent crimes in a given state (or the entire continental USA).
+- 'Correlation' aims to explore the correlation between community composition and violent crimes in a given state (or the entire continental USA).
 
--   'Scatter' aims to plot the relationship between crime rate and different variables that represent a community's composition. By selecting the option of "Communities in the State" the user can see a table that represents the data in the scatterplot for easy readability.
+- 'Scatter' aims to plot the relationship between crime rate and different variables that represent a community's composition. By selecting the option of "Communities in the State" the user can see a table that represents the data in the scatterplot for easy readability.
 
 ## Sketch
 
@@ -82,7 +83,7 @@ The top menu is used for overall navigation and will include a 'Data Exploration
 1.  Please follow the forking procedures [here](https://docs.github.com/en/get-started/quickstart/contributing-to-projects), including cloning the forked repository.
 2.  Open app.R from the main repository folder.
 3.  Make sure to have the necessary packages installed and up to date:
-    -   You can install missing packages by running the following command in the R console:
+    - You can install missing packages by running the following command in the R console:
 
     ```
     install.packages(c("readr", "shiny", "bslib", "leaflet", "DT", "ggplot2", "plotly", "thematic", "ggcorrplot"))
@@ -112,8 +113,8 @@ Please refer to our license file [here](https://github.com/UBC-MDS/Communites_an
 
 ## Authors
 
--   Sarah Abdelazim
--   Daniel Merigo
--   Luke Yang
--   Chenyang Wang
+- Sarah Abdelazim
+- Daniel Merigo
+- Luke Yang
+- Chenyang Wang
 <!-- #endregion -->
