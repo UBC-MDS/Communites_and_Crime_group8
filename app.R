@@ -202,7 +202,6 @@ server <- function(input, output, session) {
       citiesToShow = data %>% dplyr::pull(area)
     }else{
       # Filter countries based on current continent selection
-      input$state = input$state - 'All'
       citiesToShow = data %>% 
         dplyr::filter(state %in% input$state) %>% dplyr::pull(area)
     }
@@ -217,14 +216,15 @@ server <- function(input, output, session) {
   filtered_data <-reactive({
     print(input$state)
     temp <- data
-    if (input$state == 'All'){
+    if ('All' %in% input$state){
+      print('here')
       temp
     }else {
         temp <- data |>
           dplyr::filter(state %in% input$state) 
   }
   
-  if (input$city == 'All'){
+  if ('All' %in% input$city){
     temp
   }else{data |>
       dplyr::filter(area %in% input$city)
@@ -234,7 +234,7 @@ server <- function(input, output, session) {
   filtered_data_plot <-reactive({
     
     data |>
-      dplyr::filter(state == input$state_plot)
+      dplyr::filter(state %in% input$state_plot)
     
   })
   
