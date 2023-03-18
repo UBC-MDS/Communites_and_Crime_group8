@@ -197,8 +197,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$state, {
     
-    print(length(input$state))
-    if (length(input$state) == 1 & "All" %in% input$state){
+    if ("All" %in% input$state){
       citiesToShow = data %>% dplyr::pull(area)
     }else{
       # Filter countries based on current continent selection
