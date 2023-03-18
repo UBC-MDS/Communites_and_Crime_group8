@@ -43,7 +43,18 @@ data <- readr::read_csv("data/processed_communities.csv",
          population, PopDens, racepctblack, racePctWhite, racePctAsian, 
          racePctHisp, agePct12t29, agePct65up, medIncome, NumStreet, 
          PctUnemployed)
-
+names(data)[-(1:6)] <- c('Population', 
+                        'Population Density', 
+                        'Black Race Percentage', 
+                        'White Rate Percentage', 
+                        'Asian Race Percentage', 
+                        'Hispanic Race Percentage',
+                        'Age Range Percentage (12-29)', 
+                        'Age Range Percentage (65+)', 
+                        'Median Income', 
+                        'Number of Streets',
+                        'Unemployed Percentage')
+names(data)[6] <- 'Violent Crime Rate'
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
 
@@ -53,6 +64,7 @@ my_theme <- bs_theme(bootswatch = "darkly",
 
 # Define UI
 ui <- navbarPage('Crime Rate Finder App',
+                 id = 'main_page', 
                  theme = my_theme,
                  
                  # First tab - Data Exploration
@@ -65,7 +77,8 @@ ui <- navbarPage('Crime Rate Finder App',
                                    selectInput(inputId = 'state',
                                                label = 'Select State:',
                                                choices = c('All', sort(unique(data$state))),
-                                               selected = 'All'),
+                                               selected = 'All',
+                                               multiple = TRUE),
                                    selectInput(inputId = 'city',
                                                label = 'Select Community:',
                                                choices = c())
@@ -91,7 +104,9 @@ ui <- navbarPage('Crime Rate Finder App',
                               tabsetPanel(
                                 tabPanel('Correlation by State',
                                          plotlyOutput(outputId = 'corrplot')
-                                )
+                                ),
+                                
+                                id = 'corr_panel'
                               )
                             )
                           )
@@ -109,11 +124,12 @@ ui <- navbarPage('Crime Rate Finder App',
                               selectInput(inputId = 'var',
                                           label = 'Select Variable:',
                                           choices = c(colnames(data)[-(1:6)]),
-                                          selected = 'population')
+                                          selected = 'Population')
                             ),
                             # Main panel with catter plot and DT table outputs
                             mainPanel(
                               tabsetPanel(
+                                id = 'scatter_panel',
                                 tabPanel('Scatterplot',
                                          plotlyOutput(outputId = 'lineplot')
                                 ),
@@ -196,7 +212,8 @@ server <- function(input, output, session) {
   # This code generates a line plot displaying crime rates by community
   
   observeEvent(input$state, {
-    if (input$state == 'All'){
+    
+    if ("All" %in% input$state){
       citiesToShow = data %>% dplyr::pull(area)
     }else{
       # Filter countries based on current continent selection
@@ -204,34 +221,31 @@ server <- function(input, output, session) {
         dplyr::filter(state %in% input$state) %>% dplyr::pull(area)
     }
     
-    print(input$state)
-    print(citiesToShow)
-    
     # Update the actual input
     updateSelectInput(session, "city", choices = c('All', sort(citiesToShow)), 
                       selected = 'All')
     
   })
   filtered_data <-reactive({
-    print(input$state)
-    if (input$state == 'All'){
-      data
+    temp <- data
+    if ('All' %in% input$state){
+      temp
     }else {
-      if (input$city == 'All'){
-        data |>
-          dplyr::filter(state == input$state)
-      }else{
-        data |>
-          dplyr::filter(state == input$state) |>
-          dplyr::filter(area == input$city)}
-    }
-  })
+        temp <- data |>
+          dplyr::filter(state %in% input$state) 
+  }
+  
+  if ('All' %in% input$city){
+    temp
+  }else{data |>
+      dplyr::filter(area %in% input$city)
+  }})
   
   
   filtered_data_plot <-reactive({
     
     data |>
-      dplyr::filter(state == input$state_plot)
+      dplyr::filter(state %in% input$state_plot)
     
   })
   
@@ -242,7 +256,7 @@ server <- function(input, output, session) {
     plotly::ggplotly(
       filtered_data_plot() |>
         ggplot2::ggplot(aes(x = .data[[input$var]],
-                            y = violent_crime_rate)) +
+                            y = `Violent Crime Rate`)) +
         ggplot2::geom_point(alpha = 0.5) +
         geom_smooth(method = "lm") +
         ggplot2::scale_color_brewer(palette = "Set2") +
@@ -260,11 +274,11 @@ server <- function(input, output, session) {
     
     # Select columns to display
     filtered_data_table <- filtered_data_plot() |>
-      select(c('area','type',input$var,'violent_crime_rate'))
+      select(c('area','type',input$var,`Violent Crime Rate`))
     
     # Render the table
     datatable(filtered_data_table,
-              caption = 'Table: Observations by Community ',
+              caption = 'Table: Observations by Community',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
@@ -288,7 +302,7 @@ server <- function(input, output, session) {
     
     # Color palette
     pal <- leaflet::colorNumeric('viridis', 
-                                 domain = data$violent_crime_rate)
+                                 domain = data$`Violent Crime Rate`)
     
     # Add map tiles and markers
     filtered_data() |> 
@@ -299,7 +313,7 @@ server <- function(input, output, session) {
                       "in",
                       filtered_data()$state,
                       'has crime rate of',
-                      filtered_data()$violent_crime_rate),
+                      filtered_data()$`Violent Crime Rate`),
         clusterOptions = markerClusterOptions()
       ) |>
       addTiles(group = "Neighbourhood") |>  
