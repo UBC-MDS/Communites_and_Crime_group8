@@ -41,9 +41,10 @@ The top menu is used for overall navigation and will include a 'Data Exploration
 
 -   'Data Exploration' enables users to select "State" and "Community" to look at the crime rate at each community on a map, and users can also directly swipe and zoom the map to to refer the respective crime rate. When the user arrives at a data point and clicks on the marker a callout will indicate the Crime Rate in the Community.
 
--   'Correlation' aims to explore the correlation between community composition and violent crimes in a given state (or the entire continental USA).
+-   'Correlation' aims to explore the correlation between community composition and violent crimes in a given state (or the entire continental USA) and the ability to download a table containing the data selected.
 
 -   'Scatter' aims to plot the relationship between crime rate and different variables that represent a community's composition. By selecting the option of "Communities in the State" the user can see a table that represents the data in the scatterplot for easy readability.
+-   'More Information' gives the user useful links to the FBI Crime Report, FBI Crime Database and the main Wikipedia article on Crime in the United States 
 
 ## Sketch
 
