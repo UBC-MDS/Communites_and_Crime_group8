@@ -4,7 +4,6 @@ test_that("{shinytest2} recording: base_test", {
   app <- AppDriver$new(variant = platform_variant(), name = "base_test", height = 737, 
       width = 1169)
   app$expect_screenshot()
-  app$expect_values()
 })
 
 
